@@ -1,0 +1,59 @@
+"use client";
+
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+
+export function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
+      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-full bg-eduzin-dark flex items-center justify-center text-white font-serif font-bold italic">K</div>
+          <span className={`text-xl font-bold tracking-tight ${scrolled ? 'text-eduzin-dark' : 'text-white'}`}>KelasInovatif</span>
+        </div>
+
+        {/* Desktop Links */}
+        <div className={`hidden md:flex items-center gap-8 text-sm font-medium ${scrolled ? 'text-gray-700' : 'text-white'}`}>
+          <a href="#" className="hover:opacity-75 transition-opacity">HOME +</a>
+          <a href="#about" className="hover:opacity-75 transition-opacity">ABOUT</a>
+          <a href="#pages" className="hover:opacity-75 transition-opacity">PAGES +</a>
+          <a href="#contact" className="hover:opacity-75 transition-opacity">CONTACT</a>
+        </div>
+
+        {/* CTA */}
+        <div className="hidden md:flex items-center gap-4">
+           <button className={`px-5 py-2.5 rounded-full text-xs font-bold tracking-wide transition-colors ${scrolled ? 'bg-eduzin-dark text-white hover:bg-opacity-90' : 'bg-white text-eduzin-dark hover:bg-gray-100'}`}>
+            +123 (456 789 00)
+           </button>
+        </div>
+
+        {/* Mobile Toggle */}
+        <button className="md:hidden text-current" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {mobileMenuOpen ? <X className={scrolled ? 'text-black' : 'text-white'} /> : <Menu className={scrolled ? 'text-black' : 'text-white'} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-8 px-4 flex flex-col gap-4 text-center">
+          <a href="#" className="text-gray-800 font-medium" onClick={() => setMobileMenuOpen(false)}>Home</a>
+          <a href="#about" className="text-gray-800 font-medium" onClick={() => setMobileMenuOpen(false)}>About</a>
+          <a href="#contact" className="text-gray-800 font-medium" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+        </div>
+      )}
+    </nav>
+  );
+}
+
