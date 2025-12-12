@@ -175,6 +175,19 @@ export function Navbar() {
                                                 <span className="font-medium">Contact Us</span>
                                             </div>
                                         </a>
+
+                                        <div className="mx-4 my-1 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent"></div>
+
+                                        <a
+                                            href="/jobs"
+                                            className="group block px-5 py-3.5 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-eduzin-dark/10 hover:to-eduzin-dark/5 dark:hover:from-eduzin-dark/20 dark:hover:to-eduzin-dark/10 transition-all duration-200 cursor-pointer relative overflow-hidden"
+                                        >
+                                            <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-eduzin-dark to-eduzin-dark/50 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-200"></div>
+                                            <div className="flex items-center gap-3">
+                                                <div className="w-2 h-2 rounded-full bg-gradient-to-br from-eduzin-dark to-eduzin-dark/70 group-hover:scale-125 transition-transform duration-200"></div>
+                                                <span className="font-medium">Careers</span>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -236,6 +249,7 @@ export function Navbar() {
                                 <a href="/blogs" className="text-gray-700 dark:text-gray-300 text-sm cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Read Blogs</a>
                                 <a href="/faq" className="text-gray-700 dark:text-gray-300 text-sm cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Read FAQ</a>
                                 <a href="/contact" className="text-gray-700 dark:text-gray-300 text-sm cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
+                                <a href="/jobs" className="text-gray-700 dark:text-gray-300 text-sm cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Careers</a>
                             </div>
                         )}
                     </div>
