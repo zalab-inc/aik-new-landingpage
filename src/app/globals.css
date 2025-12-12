@@ -92,6 +92,15 @@
   --color-bootcamp-primary-light: #2A5C50;
   --color-bootcamp-accent: #CDE4D0;
   --color-bootcamp-bg-light: #FDFBF7;
+
+  /* Private Page Colors */
+  --color-private-primary: #1D322C;
+  --color-private-primary-light: #2A453C;
+  --color-private-accent: #2E4F3E;
+  --color-private-bg-light: #F8F7F3;
+  --color-private-bg-dark: #121212;
+  --color-private-surface-light: #FFFFFF;
+  --color-private-surface-dark: #1E1E1E;
 }
 
 :root {
