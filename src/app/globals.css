@@ -86,6 +86,12 @@
   --color-program-surface-dark: #1E1E1E;
   --color-program-text-light: #1F2937;
   --color-program-text-dark: #E5E7EB;
+
+  /* Bootcamp Page Colors */
+  --color-bootcamp-primary: #1A3C34;
+  --color-bootcamp-primary-light: #2A5C50;
+  --color-bootcamp-accent: #CDE4D0;
+  --color-bootcamp-bg-light: #FDFBF7;
 }
 
 :root {

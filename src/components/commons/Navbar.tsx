@@ -29,8 +29,9 @@ export function Navbar() {
                     <a href="/" className="hover:opacity-75 transition-opacity cursor-pointer">HOME +</a>
                     <a href="/about" className="hover:opacity-75 transition-opacity cursor-pointer">ABOUT</a>
                     <a href="/community" className="hover:opacity-75 transition-opacity cursor-pointer">COMMUNITY</a>
+                    <a href="/about" className="hover:opacity-75 transition-opacity cursor-pointer">ABOUT</a>
                     <a href="/program" className="hover:opacity-75 transition-opacity cursor-pointer">PROGRAMS</a>
-                    <a href="#pages" className="hover:opacity-75 transition-opacity cursor-pointer">PAGES +</a>
+                    <a href="/bootcamp" className="hover:opacity-75 transition-opacity cursor-pointer">BOOTCAMPS</a>
                     <a href="/contact" className="hover:opacity-75 transition-opacity cursor-pointer">CONTACT</a>
                 </div>
 
