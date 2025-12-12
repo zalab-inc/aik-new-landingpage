@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Download, Timer, GraduationCap } from 'lucide-react';
+import { Users, Download, Timer, GraduationCap, Beaker, Library, Terminal, Clock, ArrowRight } from 'lucide-react';
 
 export function SpecialPrograms() {
     return (
@@ -13,6 +13,90 @@ export function SpecialPrograms() {
                     </p>
                 </div>
                 <div className="space-y-8">
+                    {/* Scite Class */}
+                    <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
+                        <div className="grid md:grid-cols-12 gap-0">
+                            <div className="md:col-span-5 relative h-64 md:h-auto overflow-hidden">
+                                <img alt="Scite Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkSRvTogYDDcjL86rC2FvekktTJ7Jzy-R4vyS4qG86M6zFMOzThOe2VLNYSYL7LH58ekV0cmn19KLf_APdMSn41lErUTim9KxI-r36yb1HEs-YTTFtwaWqsuQwDML-8gq2AT2aFqFKt8W3wrXGfE1L4bW4tW6FnD3cTiYYnMDTsxuuVG76eSfavVjylMUIP9WXav0-PYDzDsh3ueQ2M_0JvVSjBJgziqHNF0YcTEKv6oQ3Ffw_5pG6bzjztGycxGu-mywTFO1WZQk" />
+                                <div className="absolute inset-0 bg-bootcamp-primary/20 mix-blend-multiply"></div>
+                            </div>
+                            <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <span className="px-3 py-1 bg-bootcamp-accent/20 text-bootcamp-primary dark:text-bootcamp-accent text-xs font-bold rounded-full uppercase">Core Skills</span>
+                                    <span className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                                        <Clock className="w-4 h-4 mr-1" /> 4 Weeks
+                                    </span>
+                                </div>
+                                <h3 className="text-3xl font-serif font-bold text-gray-900 dark:text-white mb-4">Scite Class</h3>
+                                <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                                    Leverage AI to check citations and discover supporting or contrasting evidence for your research papers instantly.
+                                </p>
+                                <div className="flex flex-wrap items-center gap-6">
+                                    <a className="px-6 py-3 bg-bootcamp-primary text-white rounded-full font-medium shadow hover:bg-bootcamp-primary-light transition-all flex items-center gap-2" href="#">
+                                        View Syllabus
+                                        <Download className="w-4 h-4" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* NotebookLM Class */}
+                    <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
+                        <div className="grid md:grid-cols-12 gap-0">
+                            <div className="md:col-span-5 relative h-64 md:h-auto overflow-hidden">
+                                <img alt="NotebookLM Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE2hNMSPWTxsMrTdUA0zQzseh5y6uVgvWB2GH10SWiF1MdMSnkdb4iiv9CvVnP-Q44j4I8yelIeBnYncO9Fx_pj4BUS43uglQYmu8UACrCeUZ9e29_QYbGs5IgETr_21hXV8CIveblPvPK82PXDZU7YcT7dQqb7FU21qh0tDKh0yA4RS45hdCUVb5lHrX7vj2HW99-fHGkq4AlzmpPbnwn42CZ5BXpiPr935R30FSdPoG0f0j3_fVbcy7ElPujE2i6jOpM3GYYtZM" />
+                                <div className="absolute inset-0 bg-bootcamp-primary/20 mix-blend-multiply"></div>
+                            </div>
+                            <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-bold rounded-full uppercase">New</span>
+                                    <span className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                                        <Clock className="w-4 h-4 mr-1" /> 3 Weeks
+                                    </span>
+                                </div>
+                                <h3 className="text-3xl font-serif font-bold text-gray-900 dark:text-white mb-4">NotebookLM Class</h3>
+                                <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                                    Master Google's NotebookLM to synthesize complex documents, generate insights, and accelerate your learning process.
+                                </p>
+                                <div className="flex flex-wrap items-center gap-6">
+                                    <a className="px-6 py-3 bg-bootcamp-primary text-white rounded-full font-medium shadow hover:bg-bootcamp-primary-light transition-all flex items-center gap-2" href="#">
+                                        View Syllabus
+                                        <Download className="w-4 h-4" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Cursor Class */}
+                    <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
+                        <div className="grid md:grid-cols-12 gap-0">
+                            <div className="md:col-span-5 relative h-64 md:h-auto overflow-hidden">
+                                <img alt="Cursor Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcjATHLBYqkIjstxDxkzfd1Ahry7ZdUlitQ1nvd9tuVhQSiI1Q2PzaMPPwkeqp2PvD9_7k_2x8U2xZox7vFVlgz6STEKgHBXgrVSn2H7VgKoqtYATQG7J0czSU5LAjH6SsmHs7WU1rk2og0JRMgm92l-lT-HWMsnzwg4L1HiO4cDJDaaYLpBowzkl15Ccx3atf838yYnfa137vNrc3yE9nOsEKVlftlckM3L1jfEQTCE7yrWSXMKd1lLrdRZw6dfLq9rZJ-IOPlX8" />
+                                <div className="absolute inset-0 bg-bootcamp-primary/20 mix-blend-multiply"></div>
+                            </div>
+                            <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs font-bold rounded-full uppercase">Coding</span>
+                                    <span className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                                        <Clock className="w-4 h-4 mr-1" /> 6 Weeks
+                                    </span>
+                                </div>
+                                <h3 className="text-3xl font-serif font-bold text-gray-900 dark:text-white mb-4">Cursor Class</h3>
+                                <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                                    The future of coding is here. Learn to code faster and smarter with Cursor, the AI-first code editor.
+                                </p>
+                                <div className="flex flex-wrap items-center gap-6">
+                                    <a className="px-6 py-3 bg-bootcamp-primary text-white rounded-full font-medium shadow hover:bg-bootcamp-primary-light transition-all flex items-center gap-2" href="#">
+                                        View Syllabus
+                                        <Download className="w-4 h-4" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* Smart PLS */}
                     <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
                         <div className="grid md:grid-cols-12 gap-0">

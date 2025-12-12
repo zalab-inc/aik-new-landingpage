@@ -2,7 +2,6 @@ import React from 'react';
 import { Navbar } from '@/components/commons/Navbar';
 import { Footer } from '@/components/commons/Footer';
 import { Hero } from './_components/Hero';
-import { RegularPrograms } from './_components/RegularPrograms';
 import { SpecialPrograms } from './_components/SpecialPrograms';
 import { WhyChooseUs } from './_components/WhyChooseUs';
 import { CTA } from './_components/CTA';
@@ -13,7 +12,6 @@ export default function BootcampPage() {
             <Navbar />
             <main>
                 <Hero />
-                <RegularPrograms />
                 <SpecialPrograms />
                 <WhyChooseUs />
                 <CTA />
