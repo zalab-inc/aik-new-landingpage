@@ -5,16 +5,16 @@ export function FeaturesSection() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+
           {/* Left: Image Mosaic */}
           <div className="grid grid-cols-2 gap-4 h-[500px]">
             <div className="space-y-4 pt-12">
-               <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=2670&auto=format&fit=crop" className="w-full h-48 object-cover rounded-lg" alt="Student" />
-               <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop" className="w-full h-64 object-cover rounded-lg" alt="Campus" />
+              <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=2670&auto=format&fit=crop" className="w-full h-48 object-cover rounded-lg" alt="Student" />
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop" className="w-full h-64 object-cover rounded-lg" alt="Campus" />
             </div>
             <div className="space-y-4">
-               <img src="https://images.unsplash.com/photo-1525921429624-479b6a26d84d?q=80&w=2670&auto=format&fit=crop" className="w-full h-64 object-cover rounded-lg" alt="Library" />
-               <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2670&auto=format&fit=crop" className="w-full h-48 object-cover rounded-lg" alt="Group" />
+              <img src="https://images.unsplash.com/photo-1525921429624-479b6a26d84d?q=80&w=2670&auto=format&fit=crop" className="w-full h-64 object-cover rounded-lg" alt="Library" />
+              <img src="/images/comunity4.jpeg" className="w-full h-48 object-cover rounded-lg" alt="Group" />
             </div>
           </div>
 
@@ -45,12 +45,12 @@ export function FeaturesSection() {
               </div>
             </div>
 
-             <button className="group flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-gray-800 hover:text-eduzin-dark cursor-pointer">
-               <span className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center group-hover:bg-eduzin-dark group-hover:text-white transition-colors">
-                 <ArrowRight size={14} />
-               </span>
-               Apply Now
-             </button>
+            <button className="group flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-gray-800 hover:text-eduzin-dark cursor-pointer">
+              <span className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center group-hover:bg-eduzin-dark group-hover:text-white transition-colors">
+                <ArrowRight size={14} />
+              </span>
+              Apply Now
+            </button>
           </div>
 
         </div>
