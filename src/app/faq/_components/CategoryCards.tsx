@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, BookOpen, Home } from 'lucide-react';
+import { GraduationCap, BookOpen, Home, ArrowRight } from 'lucide-react';
 
 const categories = [
     {
@@ -27,7 +27,7 @@ const categories = [
 
 export function CategoryCards() {
     return (
-        <section className="py-16 -mt-16 relative z-10">
+        <section className="py-16 -mt-32 relative z-10">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {categories.map((category, index) => {
@@ -35,7 +35,7 @@ export function CategoryCards() {
                         return (
                             <div
                                 key={index}
-                                className="bg-white dark:bg-faq-surface-dark rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+                                className="group bg-white dark:bg-faq-surface-dark rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
                             >
                                 <div className={`w-12 h-12 ${category.iconBg} rounded-xl flex items-center justify-center mb-4`}>
                                     <Icon className={`w-6 h-6 ${category.iconColor}`} />
@@ -46,6 +46,9 @@ export function CategoryCards() {
                                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                                     {category.description}
                                 </p>
+                                <div className="mt-4 flex items-center text-sm font-medium text-faq-primary dark:text-faq-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                                </div>
                             </div>
                         );
                     })}
