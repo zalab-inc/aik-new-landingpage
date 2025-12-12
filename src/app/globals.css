@@ -122,6 +122,18 @@
   --color-terms-text-dark: #F3F4F6;
   --color-terms-muted-light: #6B7280;
   --color-terms-muted-dark: #9CA3AF;
+
+  /* FAQ Page Colors */
+  --color-faq-primary: #1F3A33;
+  --color-faq-secondary: #D4B695;
+  --color-faq-bg-light: #F8F7F5;
+  --color-faq-bg-dark: #111827;
+  --color-faq-surface-light: #FFFFFF;
+  --color-faq-surface-dark: #1F2937;
+  --color-faq-text-light: #1F2937;
+  --color-faq-text-dark: #F3F4F6;
+  --color-faq-muted-light: #6B7280;
+  --color-faq-muted-dark: #9CA3AF;
 }
 
 :root {

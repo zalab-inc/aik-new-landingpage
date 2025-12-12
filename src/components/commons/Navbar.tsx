@@ -30,6 +30,7 @@ export function Navbar() {
                     <a href="/bootcamp" className="hover:opacity-75 transition-opacity cursor-pointer">BOOTCAMPS</a>
                     <a href="/private" className="hover:opacity-75 transition-opacity cursor-pointer">PRIVATE</a>
                     <a href="/program" className="hover:opacity-75 transition-opacity cursor-pointer">PROGRAMS</a>
+                    <a href="/faq" className="hover:opacity-75 transition-opacity cursor-pointer">FAQ</a>
                     <a href="/contact" className="hover:opacity-75 transition-opacity cursor-pointer">CONTACT</a>
                 </div>
 
@@ -53,6 +54,7 @@ export function Navbar() {
                     <a href="/about" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>About</a>
                     <a href="/community" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Community</a>
                     <a href="/program" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Programs</a>
+                    <a href="/faq" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
                     <a href="/contact" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Contact</a>
                 </div>
             )}

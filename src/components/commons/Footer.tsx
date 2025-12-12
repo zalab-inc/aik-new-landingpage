@@ -49,6 +49,7 @@ export function Footer() {
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Career Services</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Alumni Association</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Student Portal</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/faq">FAQ</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Staff Directory</a></li>
                         </ul>
                     </div>
