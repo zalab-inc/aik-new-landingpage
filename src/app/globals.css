@@ -110,6 +110,18 @@
   --color-privacy-bg-dark: #121212;
   --color-privacy-surface-light: #FFFFFF;
   --color-privacy-surface-dark: #1E1E1E;
+
+  /* Terms Page Colors */
+  --color-terms-primary: #1F3A33;
+  --color-terms-secondary: #D4B695;
+  --color-terms-bg-light: #F8F7F5;
+  --color-terms-bg-dark: #111827;
+  --color-terms-surface-light: #FFFFFF;
+  --color-terms-surface-dark: #1F2937;
+  --color-terms-text-light: #1F2937;
+  --color-terms-text-dark: #F3F4F6;
+  --color-terms-muted-light: #6B7280;
+  --color-terms-muted-dark: #9CA3AF;
 }
 
 :root {
