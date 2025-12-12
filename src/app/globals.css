@@ -77,6 +77,15 @@
   --color-community-bg-dark: #111827;
   --color-community-card-dark: #1F2937;
   --color-community-text-muted: #9CA3AF;
+  /* Program Page Colors */
+  --color-program-primary: #1A3C34;
+  --color-program-primary-light: #2D584E;
+  --color-program-accent: #E8F0EE;
+  --color-program-bg-light: #FAFAFA;
+  --color-program-bg-dark: #121212;
+  --color-program-surface-dark: #1E1E1E;
+  --color-program-text-light: #1F2937;
+  --color-program-text-dark: #E5E7EB;
 }
 
 :root {
