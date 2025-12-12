@@ -145,6 +145,15 @@
   --color-blog-surface-dark: #1e1e1e;
   --color-blog-text-light: #1f3a33;
   --color-blog-text-dark: #e0e0e0;
+
+  /* Schedule Page Colors */
+  --color-schedule-primary: #1F453C;
+  --color-schedule-primary-light: #2D5C52;
+  --color-schedule-accent: #E3EBE8;
+  --color-schedule-bg-light: #FAF9F6;
+  --color-schedule-bg-dark: #0F172A;
+  --color-schedule-surface-light: #FFFFFF;
+  --color-schedule-surface-dark: #1E293B;
 }
 
 :root {
