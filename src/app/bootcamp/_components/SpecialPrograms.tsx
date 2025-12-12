@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Download, Timer, GraduationCap, Beaker, Library, Terminal, Clock, ArrowRight } from 'lucide-react';
+import { Users, Download, Timer, GraduationCap, Clock, ArrowRight, TextQuote, Notebook, MousePointer2 } from 'lucide-react';
 
 export function SpecialPrograms() {
     return (
@@ -17,7 +17,7 @@ export function SpecialPrograms() {
                     <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
                         <div className="grid md:grid-cols-12 gap-0">
                             <div className="md:col-span-5 relative h-64 md:h-auto overflow-hidden">
-                                <img alt="Scite Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkSRvTogYDDcjL86rC2FvekktTJ7Jzy-R4vyS4qG86M6zFMOzThOe2VLNYSYL7LH58ekV0cmn19KLf_APdMSn41lErUTim9KxI-r36yb1HEs-YTTFtwaWqsuQwDML-8gq2AT2aFqFKt8W3wrXGfE1L4bW4tW6FnD3cTiYYnMDTsxuuVG76eSfavVjylMUIP9WXav0-PYDzDsh3ueQ2M_0JvVSjBJgziqHNF0YcTEKv6oQ3Ffw_5pG6bzjztGycxGu-mywTFO1WZQk" />
+                                <img alt="Scite Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="file:///C:/Users/zaki/.gemini/antigravity/brain/a2a3be06-0cc2-447c-804f-37bce9368fa7/scite_class_icon_1765505710175.png" />
                                 <div className="absolute inset-0 bg-bootcamp-primary/20 mix-blend-multiply"></div>
                             </div>
                             <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
@@ -36,6 +36,12 @@ export function SpecialPrograms() {
                                         View Syllabus
                                         <Download className="w-4 h-4" />
                                     </a>
+                                    <div className="flex items-center gap-4">
+                                        <div className="flex -space-x-3">
+                                            <img alt="Instructor" className="w-10 h-10 rounded-full border-2 border-white dark:border-program-surface-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEBNBUpr4AVgYV7hlB2n7m37ORgyuqOkU5QqyEvLmkktBi7nvGyWU-1z90Ut7zSr-OLJUA7f6olWgWIqOzvywPl5SkvD-6TNT2NLv6XYnI2oxm1xM3vSsgVbNA5xnkzQy4TX3LEwOcKH9AbJg6WStiPan71_wGRlTF7EkJNPFSEhyCS9rjJua-gVDBjlpynovmJGgN0F-NKDgq4fG1OQu9CR1nkrRRNlNnzoK2nItQw7aGBcfxWAjYjB1XmlfxqEcrdehYZBQ2-P8" />
+                                        </div>
+                                        <span className="text-sm font-medium text-gray-900 dark:text-white">Dr. Sarah & Team</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +51,7 @@ export function SpecialPrograms() {
                     <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
                         <div className="grid md:grid-cols-12 gap-0">
                             <div className="md:col-span-5 relative h-64 md:h-auto overflow-hidden">
-                                <img alt="NotebookLM Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE2hNMSPWTxsMrTdUA0zQzseh5y6uVgvWB2GH10SWiF1MdMSnkdb4iiv9CvVnP-Q44j4I8yelIeBnYncO9Fx_pj4BUS43uglQYmu8UACrCeUZ9e29_QYbGs5IgETr_21hXV8CIveblPvPK82PXDZU7YcT7dQqb7FU21qh0tDKh0yA4RS45hdCUVb5lHrX7vj2HW99-fHGkq4AlzmpPbnwn42CZ5BXpiPr935R30FSdPoG0f0j3_fVbcy7ElPujE2i6jOpM3GYYtZM" />
+                                <img alt="NotebookLM Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="file:///C:/Users/zaki/.gemini/antigravity/brain/a2a3be06-0cc2-447c-804f-37bce9368fa7/notebooklm_class_icon_1765505727574.png" />
                                 <div className="absolute inset-0 bg-bootcamp-primary/20 mix-blend-multiply"></div>
                             </div>
                             <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
@@ -64,6 +70,12 @@ export function SpecialPrograms() {
                                         View Syllabus
                                         <Download className="w-4 h-4" />
                                     </a>
+                                    <div className="flex items-center gap-4">
+                                        <div className="flex -space-x-3">
+                                            <img alt="Instructor" className="w-10 h-10 rounded-full border-2 border-white dark:border-program-surface-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg2wCIsblMhDqKhAri85ljVPNEIK6FkPVqR-Dx0GFMPNaF9lrc_Wa03UerIQdAjdxjZlJZT7ofA4_KI_YP6tTs3oOLmyzGfFRkl8tFw0MHE8k9PTDVDkYtpwi6USTifaqUKyE2YGckDTv93VnmzzuyfSLycTJakPpwmZTnJmvWKpd0-Hz_RNjgq-8e6o2wo89J-SDRjmbpgZLgIuASL6FH04uvRQWZLEb_Z-YMr1b1FtcrUhl2CjWJVliJaZjwVnjIOZbszRcjPn8" />
+                                        </div>
+                                        <span className="text-sm font-medium text-gray-900 dark:text-white">Expert Team</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +85,7 @@ export function SpecialPrograms() {
                     <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
                         <div className="grid md:grid-cols-12 gap-0">
                             <div className="md:col-span-5 relative h-64 md:h-auto overflow-hidden">
-                                <img alt="Cursor Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcjATHLBYqkIjstxDxkzfd1Ahry7ZdUlitQ1nvd9tuVhQSiI1Q2PzaMPPwkeqp2PvD9_7k_2x8U2xZox7vFVlgz6STEKgHBXgrVSn2H7VgKoqtYATQG7J0czSU5LAjH6SsmHs7WU1rk2og0JRMgm92l-lT-HWMsnzwg4L1HiO4cDJDaaYLpBowzkl15Ccx3atf838yYnfa137vNrc3yE9nOsEKVlftlckM3L1jfEQTCE7yrWSXMKd1lLrdRZw6dfLq9rZJ-IOPlX8" />
+                                <img alt="Cursor Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="file:///C:/Users/zaki/.gemini/antigravity/brain/a2a3be06-0cc2-447c-804f-37bce9368fa7/cursor_class_icon_1765505746075.png" />
                                 <div className="absolute inset-0 bg-bootcamp-primary/20 mix-blend-multiply"></div>
                             </div>
                             <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
@@ -92,6 +104,12 @@ export function SpecialPrograms() {
                                         View Syllabus
                                         <Download className="w-4 h-4" />
                                     </a>
+                                    <div className="flex items-center gap-4">
+                                        <div className="flex -space-x-3">
+                                            <img alt="Instructor" className="w-10 h-10 rounded-full border-2 border-white dark:border-program-surface-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGMqAY97kL0BpbtLF-_M8mlY1qQuz6JG2TIXIu7--_pCCR-VehTSyrtzJ1B0jlKuDN8JkhbvO1OJrm6qvr5FEydXACQ4BNvhEXforQrBH2cBa63jw6DUSV7CZJ6H1s5Zs0lq6uctMvOsygAB8r7gGfKV4NtVUsWRM0USn8eJdBRUpno5jIHjeg-jrzA6XLEzyDHsN_ZO3iPytuLXPVlIJi9OkEUuyMXfLJKU3wsYmj-HN_bfJnOsW7Qo7nCRgbiha5sR3dodBvZQg" />
+                                        </div>
+                                        <span className="text-sm font-medium text-gray-900 dark:text-white">Prof. Alan</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
