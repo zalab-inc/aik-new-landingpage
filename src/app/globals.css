@@ -134,6 +134,17 @@
   --color-faq-text-dark: #F3F4F6;
   --color-faq-muted-light: #6B7280;
   --color-faq-muted-dark: #9CA3AF;
+
+  /* Blog Page Colors */
+  --color-blog-primary: #1f3a33;
+  --color-blog-secondary: #E8E6E1;
+  --color-blog-accent: #C6F255;
+  --color-blog-bg-light: #F9F8F6;
+  --color-blog-bg-dark: #121212;
+  --color-blog-surface-light: #ffffff;
+  --color-blog-surface-dark: #1e1e1e;
+  --color-blog-text-light: #1f3a33;
+  --color-blog-text-dark: #e0e0e0;
 }
 
 :root {
