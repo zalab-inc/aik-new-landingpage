@@ -6,7 +6,6 @@ import { Footer } from "@/components/commons/Footer";
 import { AIChatBot } from "@/components/commons/AIChatBot";
 import { ContactHero } from "./_components/ContactHero";
 import { ContactFormSection } from "./_components/ContactFormSection";
-import { ContactMap } from "./_components/ContactMap";
 import { ContactFAQ } from "./_components/ContactFAQ";
 import { BlogSection } from "@/components/commons/BlogSection";
 import { NewsletterSection } from "@/components/commons/NewsletterSection";
@@ -17,7 +16,6 @@ export default function ContactPage() {
             <Navbar />
             <ContactHero />
             <ContactFormSection />
-            <ContactMap />
             <ContactFAQ />
             <BlogSection />
             <NewsletterSection />
