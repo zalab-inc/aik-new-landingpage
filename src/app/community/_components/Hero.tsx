@@ -32,7 +32,7 @@ export function Hero() {
                     </div>
                     <div className="relative lg:h-[500px] w-full hidden lg:block">
                         <div className="absolute top-0 right-10 w-64 h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition duration-500 z-10 border-4 border-white/10">
-                            <img alt="Students collaborating" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOQ2CmKPUQoxn1B5A8Ph1YxmODEHZeCSZWNNbrK-JlqpqxQ5DV0kK3ythBLd-xAB4vjf63ZU8fngyX4I0qjFRmG6XjFMpI19XAVIe6I12jOSqx6iR4mU8RQk87cGMtp8v9Uc_Gp8y79i07OTGi9xFU5FWhU6bDytCwWW865z5MhcqknLNA7wHOlTX_zMtc6ujIZ6ydXWr0BdKDmgRAG5wlV1a1xn3i7p2PUyL6JDvgs3J5KCOWVLX4icDEdhVl7rTkjHlZEP4qL-A" />
+                            <img alt="Graduates in Togas" className="w-full h-full object-cover" src="/community/graduation.png" />
                         </div>
                         <div className="absolute bottom-10 left-10 w-72 h-64 rounded-2xl overflow-hidden shadow-2xl transform -rotate-3 hover:rotate-0 transition duration-500 z-20 border-4 border-white/10">
                             <img alt="Campus exterior gathering" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgxp2Z7OkT22WAbGQLWQ7VKZbWk0eO3Q_Xy_-ZfwR8zWGdnGPRWuy0acL5AdGzIHsTS0A6-aZU7BYjbYB3b_a8IrYhdrBvjF6pHqNva5JccDl50CPomlUIMfjZfVLRI8WhI4qrvA3cq1yVR15HzpENncgwHjkiGFvfzeeRtAHdbJxy6yIQu4k40r3NUBpuowXv35jUoRGuc7aTUPR4sUekAPCD7JuyaNDn1Ra6nuATyXpL2JYG2ImP9v93EdLqklgN9tEhTGXyBK4" />
