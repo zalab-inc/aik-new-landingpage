@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, BookOpen, Rocket, Users, Newspaper, HelpCircle, Mail, Briefcase } from 'lucide-react';
 
 export function Navbar() {
+    // Force rebuild
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [programsDropdownOpen, setProgramsDropdownOpen] = useState(false);
@@ -71,7 +72,7 @@ export function Navbar() {
                                         >
                                             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-eduzin-dark to-eduzin-dark/50 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-200"></div>
                                             <div className="flex items-center gap-3">
-                                                <div className="w-2 h-2 rounded-full bg-gradient-to-br from-eduzin-dark to-eduzin-dark/70 group-hover:scale-125 transition-transform duration-200"></div>
+                                                <BookOpen className="w-4 h-4 text-eduzin-dark group-hover:scale-110 transition-transform duration-200" />
                                                 <span className="font-medium">Regular Program</span>
                                             </div>
                                         </a>
@@ -84,7 +85,7 @@ export function Navbar() {
                                         >
                                             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-eduzin-dark to-eduzin-dark/50 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-200"></div>
                                             <div className="flex items-center gap-3">
-                                                <div className="w-2 h-2 rounded-full bg-gradient-to-br from-eduzin-dark to-eduzin-dark/70 group-hover:scale-125 transition-transform duration-200"></div>
+                                                <Rocket className="w-4 h-4 text-eduzin-dark group-hover:scale-110 transition-transform duration-200" />
                                                 <span className="font-medium">Bootcamp Masterclass</span>
                                             </div>
                                         </a>
@@ -97,7 +98,7 @@ export function Navbar() {
                                         >
                                             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-eduzin-dark to-eduzin-dark/50 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-200"></div>
                                             <div className="flex items-center gap-3">
-                                                <div className="w-2 h-2 rounded-full bg-gradient-to-br from-eduzin-dark to-eduzin-dark/70 group-hover:scale-125 transition-transform duration-200"></div>
+                                                <Users className="w-4 h-4 text-eduzin-dark group-hover:scale-110 transition-transform duration-200" />
                                                 <span className="font-medium">Private Class</span>
                                             </div>
                                         </a>
@@ -146,7 +147,7 @@ export function Navbar() {
                                         >
                                             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-eduzin-dark to-eduzin-dark/50 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-200"></div>
                                             <div className="flex items-center gap-3">
-                                                <div className="w-2 h-2 rounded-full bg-gradient-to-br from-eduzin-dark to-eduzin-dark/70 group-hover:scale-125 transition-transform duration-200"></div>
+                                                <Newspaper className="w-4 h-4 text-eduzin-dark group-hover:scale-110 transition-transform duration-200" />
                                                 <span className="font-medium">Read Blogs</span>
                                             </div>
                                         </a>
@@ -159,7 +160,7 @@ export function Navbar() {
                                         >
                                             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-eduzin-dark to-eduzin-dark/50 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-200"></div>
                                             <div className="flex items-center gap-3">
-                                                <div className="w-2 h-2 rounded-full bg-gradient-to-br from-eduzin-dark to-eduzin-dark/70 group-hover:scale-125 transition-transform duration-200"></div>
+                                                <HelpCircle className="w-4 h-4 text-eduzin-dark group-hover:scale-110 transition-transform duration-200" />
                                                 <span className="font-medium">Read FAQ</span>
                                             </div>
                                         </a>
@@ -172,7 +173,7 @@ export function Navbar() {
                                         >
                                             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-eduzin-dark to-eduzin-dark/50 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-200"></div>
                                             <div className="flex items-center gap-3">
-                                                <div className="w-2 h-2 rounded-full bg-gradient-to-br from-eduzin-dark to-eduzin-dark/70 group-hover:scale-125 transition-transform duration-200"></div>
+                                                <Mail className="w-4 h-4 text-eduzin-dark group-hover:scale-110 transition-transform duration-200" />
                                                 <span className="font-medium">Contact Us</span>
                                             </div>
                                         </a>
@@ -185,7 +186,7 @@ export function Navbar() {
                                         >
                                             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-eduzin-dark to-eduzin-dark/50 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-200"></div>
                                             <div className="flex items-center gap-3">
-                                                <div className="w-2 h-2 rounded-full bg-gradient-to-br from-eduzin-dark to-eduzin-dark/70 group-hover:scale-125 transition-transform duration-200"></div>
+                                                <Briefcase className="w-4 h-4 text-eduzin-dark group-hover:scale-110 transition-transform duration-200" />
                                                 <span className="font-medium">Careers</span>
                                             </div>
                                         </a>
