@@ -30,6 +30,7 @@ export function Navbar() {
 
                 {/* Desktop Links */}
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700 dark:text-gray-300">
+                    <a href="/" className="hover:opacity-75 transition-opacity cursor-pointer">HOME</a>
                     <a href="/about" className="hover:opacity-75 transition-opacity cursor-pointer">ABOUT</a>
                     <a href="/community" className="hover:opacity-75 transition-opacity cursor-pointer">COMMUNITY</a>
 
