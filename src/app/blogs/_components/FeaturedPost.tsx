@@ -29,9 +29,11 @@ export function FeaturedPost() {
                             <span>•</span>
                             <span>{featuredPost.date}</span>
                         </div>
-                        <h2 className="text-3xl lg:text-4xl font-serif text-blog-primary dark:text-white mb-4 leading-tight hover:underline cursor-pointer">
-                            {featuredPost.title}
-                        </h2>
+                        <a href="/blog-detail">
+                            <h2 className="text-3xl lg:text-4xl font-serif text-blog-primary dark:text-white mb-4 leading-tight hover:underline cursor-pointer">
+                                {featuredPost.title}
+                            </h2>
+                        </a>
                         <p className="text-gray-600 dark:text-gray-300 mb-8 line-clamp-3">
                             {featuredPost.excerpt}
                         </p>
@@ -51,7 +53,7 @@ export function FeaturedPost() {
                             </div>
                             <a
                                 className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 text-blog-primary dark:text-white hover:bg-blog-primary hover:text-white dark:hover:bg-white dark:hover:text-blog-primary transition"
-                                href="#"
+                                href="/blog-detail"
                             >
                                 <ArrowRight className="w-4 h-4" />
                             </a>
