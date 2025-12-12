@@ -27,7 +27,7 @@ const categories = [
 
 export function CategoryCards() {
     return (
-        <section className="py-16 -mt-12 relative z-10">
+        <section className="py-16 -mt-16 relative z-10">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {categories.map((category, index) => {
