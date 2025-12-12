@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { Navbar } from './_components/Navbar';
+import { Navbar } from '@/components/commons/Navbar';
 import { Hero } from './_components/Hero';
 import { StatsSection } from './_components/StatsSection';
 import { CoursesSection } from './_components/CoursesSection';
@@ -11,8 +11,8 @@ import { PromoSection } from './_components/PromoSection';
 import { EventSection } from './_components/EventSection';
 import { FaqSection } from './_components/FaqSection';
 import { NewsSection } from './_components/NewsSection';
-import { Footer } from './_components/Footer';
-import { AIChatBot } from './_components/AIChatBot';
+import { Footer } from '@/components/commons/Footer';
+import { AIChatBot } from '@/components/commons/AIChatBot';
 import { CourseDetailView } from './_components/CourseDetailView';
 import { Course } from './types';
 
