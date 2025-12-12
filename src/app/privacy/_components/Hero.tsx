@@ -3,7 +3,7 @@ import { Clock } from 'lucide-react';
 
 export function Hero() {
     return (
-        <section className="relative py-20 bg-privacy-primary overflow-hidden">
+        <section className="relative pt-32 pb-20 bg-privacy-primary overflow-hidden">
             <div className="absolute inset-0 opacity-10">
                 <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
                     <defs>
