@@ -20,7 +20,7 @@ export function CourseDetailView({ course, onBack }: CourseDetailViewProps) {
       <div className="container mx-auto px-4 md:px-8 py-6">
         <button 
           onClick={onBack}
-          className="flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-eduzin-dark transition-colors uppercase tracking-wider"
+          className="flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-eduzin-dark transition-colors uppercase tracking-wider cursor-pointer"
         >
           <ArrowLeft size={16} /> Back to Courses
         </button>
@@ -141,11 +141,11 @@ export function CourseDetailView({ course, onBack }: CourseDetailViewProps) {
                       <span className="text-3xl font-bold text-eduzin-dark">{course.price}</span>
                    </div>
                    
-                   <button className="w-full bg-eduzin-dark text-white py-4 rounded-full font-bold text-sm hover:bg-opacity-90 transition-colors mb-4 shadow-lg shadow-eduzin-dark/20">
+                   <button className="w-full bg-eduzin-dark text-white py-4 rounded-full font-bold text-sm hover:bg-opacity-90 transition-colors mb-4 shadow-lg shadow-eduzin-dark/20 cursor-pointer">
                      ENROLL NOW
                    </button>
                    
-                   <button className="w-full bg-transparent border border-gray-200 text-gray-700 py-3 rounded-full font-bold text-xs hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
+                   <button className="w-full bg-transparent border border-gray-200 text-gray-700 py-3 rounded-full font-bold text-xs hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 cursor-pointer">
                      <Share2 size={14} /> SHARE COURSE
                    </button>
 
@@ -173,7 +173,7 @@ export function CourseDetailView({ course, onBack }: CourseDetailViewProps) {
                 <div className="bg-eduzin-light p-6 rounded-2xl border border-gray-200 text-center">
                    <h4 className="font-serif font-bold text-lg mb-2">Need more information?</h4>
                    <p className="text-sm text-gray-600 mb-4">Contact our admissions team for detailed guidance.</p>
-                   <a href="#" className="text-xs font-bold text-eduzin-dark underline decoration-2 underline-offset-4">CONTACT US</a>
+                   <a href="#" className="text-xs font-bold text-eduzin-dark underline decoration-2 underline-offset-4 cursor-pointer">CONTACT US</a>
                 </div>
 
              </div>

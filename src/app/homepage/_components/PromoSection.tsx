@@ -23,7 +23,7 @@ export function PromoSection() {
             </div>
             <span className="inline-block px-4 py-1 border border-gray-800 rounded-full text-xs font-bold uppercase tracking-wider">Book a Free Tour</span>
             <h2 className="text-4xl md:text-5xl font-serif font-medium">KelasInovatif university campus is amazing.</h2>
-            <button className="mx-auto bg-eduzin-dark text-white px-6 py-3 rounded-full flex items-center gap-2 text-sm font-bold">
+            <button className="mx-auto bg-eduzin-dark text-white px-6 py-3 rounded-full flex items-center gap-2 text-sm font-bold cursor-pointer">
               CONTACT US <ArrowRight size={16} />
             </button>
           </div>

@@ -175,14 +175,14 @@ export function StatsSection() {
              <div className="flex gap-4">
                 <button 
                   onClick={prevTestimonial}
-                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-eduzin-dark transition-all duration-300 group"
+                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-eduzin-dark transition-all duration-300 group cursor-pointer"
                   aria-label="Previous testimonial"
                 >
                   <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
                 </button>
                 <button 
                   onClick={nextTestimonial}
-                  className="w-12 h-12 rounded-full bg-white text-eduzin-dark flex items-center justify-center hover:bg-white/90 transition-all duration-300 shadow-lg group"
+                  className="w-12 h-12 rounded-full bg-white text-eduzin-dark flex items-center justify-center hover:bg-white/90 transition-all duration-300 shadow-lg group cursor-pointer"
                   aria-label="Next testimonial"
                 >
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

@@ -45,7 +45,7 @@ export function FeaturesSection() {
               </div>
             </div>
 
-             <button className="group flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-gray-800 hover:text-eduzin-dark">
+             <button className="group flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-gray-800 hover:text-eduzin-dark cursor-pointer">
                <span className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center group-hover:bg-eduzin-dark group-hover:text-white transition-colors">
                  <ArrowRight size={14} />
                </span>

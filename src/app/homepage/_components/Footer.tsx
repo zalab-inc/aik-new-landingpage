@@ -34,10 +34,10 @@ export function Footer() {
                </svg>
 
                <div className="flex gap-8 text-xs font-bold tracking-widest text-gray-500 mt-12 relative z-10">
-                 <a href="#" className="hover:text-black">ABOUT</a>
-                 <a href="#" className="hover:text-black">FAQ</a>
-                 <a href="#" className="hover:text-black">CAREERS</a>
-                 <a href="#" className="hover:text-black">CONTACT</a>
+                 <a href="#" className="hover:text-black cursor-pointer">ABOUT</a>
+                 <a href="#" className="hover:text-black cursor-pointer">FAQ</a>
+                 <a href="#" className="hover:text-black cursor-pointer">CAREERS</a>
+                 <a href="#" className="hover:text-black cursor-pointer">CONTACT</a>
                </div>
            </div>
 
@@ -51,12 +51,12 @@ export function Footer() {
         <div className="mb-16 pt-12 border-t border-gray-100">
            <div className="flex justify-between items-end mb-8">
               <h4 className="text-xs font-bold tracking-widest uppercase text-gray-500">Latest from the Blog</h4>
-              <a href="#" className="text-xs font-bold underline decoration-1 underline-offset-4 hover:text-eduzin-dark">VIEW ALL</a>
+              <a href="#" className="text-xs font-bold underline decoration-1 underline-offset-4 hover:text-eduzin-dark cursor-pointer">VIEW ALL</a>
            </div>
            
            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Blog 1 */}
-              <a href="#" className="group block">
+              <a href="#" className="group block cursor-pointer">
                  <div className="overflow-hidden rounded-sm mb-4">
                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2670&auto=format&fit=crop" 
                         alt="Blog 1" 
@@ -74,7 +74,7 @@ export function Footer() {
               </a>
 
               {/* Blog 2 */}
-              <a href="#" className="group block">
+              <a href="#" className="group block cursor-pointer">
                  <div className="overflow-hidden rounded-sm mb-4">
                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop" 
                         alt="Blog 2" 
@@ -92,7 +92,7 @@ export function Footer() {
               </a>
 
               {/* Blog 3 */}
-              <a href="#" className="group block">
+              <a href="#" className="group block cursor-pointer">
                  <div className="overflow-hidden rounded-sm mb-4">
                    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=2574&auto=format&fit=crop" 
                         alt="Blog 3" 
@@ -137,10 +137,10 @@ export function Footer() {
 
         {/* Bottom Navigation Links */}
         <div className="flex justify-center items-center gap-8 mb-8">
-            <a href="#" className="text-xs font-bold tracking-widest text-gray-500 hover:text-eduzin-dark uppercase">Home +</a>
-            <a href="#about" className="text-xs font-bold tracking-widest text-gray-500 hover:text-eduzin-dark uppercase">About</a>
-            <a href="#pages" className="text-xs font-bold tracking-widest text-gray-500 hover:text-eduzin-dark uppercase">Pages +</a>
-            <a href="#contact" className="text-xs font-bold tracking-widest text-gray-500 hover:text-eduzin-dark uppercase">Contact</a>
+            <a href="#" className="text-xs font-bold tracking-widest text-gray-500 hover:text-eduzin-dark uppercase cursor-pointer">Home +</a>
+            <a href="#about" className="text-xs font-bold tracking-widest text-gray-500 hover:text-eduzin-dark uppercase cursor-pointer">About</a>
+            <a href="#pages" className="text-xs font-bold tracking-widest text-gray-500 hover:text-eduzin-dark uppercase cursor-pointer">Pages +</a>
+            <a href="#contact" className="text-xs font-bold tracking-widest text-gray-500 hover:text-eduzin-dark uppercase cursor-pointer">Contact</a>
         </div>
 
         {/* Bottom Bar */}

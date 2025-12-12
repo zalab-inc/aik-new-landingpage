@@ -26,21 +26,21 @@ export function Navbar() {
 
         {/* Desktop Links */}
         <div className={`hidden md:flex items-center gap-8 text-sm font-medium ${scrolled ? 'text-gray-700' : 'text-white'}`}>
-          <a href="#" className="hover:opacity-75 transition-opacity">HOME +</a>
-          <a href="#about" className="hover:opacity-75 transition-opacity">ABOUT</a>
-          <a href="#pages" className="hover:opacity-75 transition-opacity">PAGES +</a>
-          <a href="#contact" className="hover:opacity-75 transition-opacity">CONTACT</a>
+          <a href="#" className="hover:opacity-75 transition-opacity cursor-pointer">HOME +</a>
+          <a href="#about" className="hover:opacity-75 transition-opacity cursor-pointer">ABOUT</a>
+          <a href="#pages" className="hover:opacity-75 transition-opacity cursor-pointer">PAGES +</a>
+          <a href="#contact" className="hover:opacity-75 transition-opacity cursor-pointer">CONTACT</a>
         </div>
 
         {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
-           <button className={`px-5 py-2.5 rounded-full text-xs font-bold tracking-wide transition-colors ${scrolled ? 'bg-eduzin-dark text-white hover:bg-opacity-90' : 'bg-white text-eduzin-dark hover:bg-gray-100'}`}>
+           <button className={`px-5 py-2.5 rounded-full text-xs font-bold tracking-wide transition-colors cursor-pointer ${scrolled ? 'bg-eduzin-dark text-white hover:bg-opacity-90' : 'bg-white text-eduzin-dark hover:bg-gray-100'}`}>
             +123 (456 789 00)
            </button>
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-current" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <button className="md:hidden text-current cursor-pointer" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X className={scrolled ? 'text-black' : 'text-white'} /> : <Menu className={scrolled ? 'text-black' : 'text-white'} />}
         </button>
       </div>
@@ -48,9 +48,9 @@ export function Navbar() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-8 px-4 flex flex-col gap-4 text-center">
-          <a href="#" className="text-gray-800 font-medium" onClick={() => setMobileMenuOpen(false)}>Home</a>
-          <a href="#about" className="text-gray-800 font-medium" onClick={() => setMobileMenuOpen(false)}>About</a>
-          <a href="#contact" className="text-gray-800 font-medium" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+          <a href="#" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Home</a>
+          <a href="#about" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>About</a>
+          <a href="#contact" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Contact</a>
         </div>
       )}
     </nav>

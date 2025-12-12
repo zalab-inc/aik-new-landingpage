@@ -5,21 +5,21 @@ function ShareButtons({ isDark = false }: { isDark?: boolean }) {
   return (
     <div className={`flex items-center gap-3 mr-4 md:mr-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${isDark ? 'text-white/80' : 'text-gray-400'}`}>
       <button 
-        className={`p-1.5 rounded-full transition-all hover:scale-110 ${isDark ? 'hover:bg-white/10' : 'hover:bg-gray-100'}`}
+        className={`p-1.5 rounded-full transition-all hover:scale-110 cursor-pointer ${isDark ? 'hover:bg-white/10' : 'hover:bg-gray-100'}`}
         aria-label="Share on Facebook"
         onClick={(e) => { e.stopPropagation(); }}
       >
         <Facebook size={14} />
       </button>
       <button 
-        className={`p-1.5 rounded-full transition-all hover:scale-110 ${isDark ? 'hover:bg-white/10' : 'hover:bg-gray-100'}`}
+        className={`p-1.5 rounded-full transition-all hover:scale-110 cursor-pointer ${isDark ? 'hover:bg-white/10' : 'hover:bg-gray-100'}`}
         aria-label="Share on Twitter"
         onClick={(e) => { e.stopPropagation(); }}
       >
         <Twitter size={14} />
       </button>
       <button 
-        className={`p-1.5 rounded-full transition-all hover:scale-110 ${isDark ? 'hover:bg-white/10' : 'hover:bg-gray-100'}`}
+        className={`p-1.5 rounded-full transition-all hover:scale-110 cursor-pointer ${isDark ? 'hover:bg-white/10' : 'hover:bg-gray-100'}`}
         aria-label="Share on LinkedIn"
         onClick={(e) => { e.stopPropagation(); }}
       >
@@ -39,7 +39,7 @@ export function NewsSection() {
              <span className="inline-block px-3 py-1 border border-gray-300 rounded-full text-xs font-bold uppercase tracking-wider mb-2">Event</span>
              <h2 className="text-3xl font-medium">News about our KelasInovatif<br/>university</h2>
            </div>
-           <button className="bg-eduzin-dark text-white px-6 py-2 rounded-full text-xs font-bold flex items-center gap-2 hover:bg-opacity-90 transition-colors">
+           <button className="bg-eduzin-dark text-white px-6 py-2 rounded-full text-xs font-bold flex items-center gap-2 hover:bg-opacity-90 transition-colors cursor-pointer">
              MORE NEWS <ArrowRight size={14} />
            </button>
         </div>

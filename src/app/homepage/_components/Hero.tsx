@@ -27,7 +27,7 @@ export function Hero() {
               Graduates hold a position related to their degree or career objective.
             </p>
             
-            <button className="bg-white text-eduzin-dark px-8 py-3 rounded-full font-bold flex items-center gap-2 hover:bg-gray-100 transition-colors group">
+            <button className="bg-white text-eduzin-dark px-8 py-3 rounded-full font-bold flex items-center gap-2 hover:bg-gray-100 transition-colors group cursor-pointer">
               JOIN COMMUNITY
               <div className="w-6 h-6 rounded-full bg-eduzin-dark flex items-center justify-center text-white group-hover:rotate-45 transition-transform">
                 <ArrowRight size={14} />

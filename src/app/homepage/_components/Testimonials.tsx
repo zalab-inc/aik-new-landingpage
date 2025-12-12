@@ -64,14 +64,14 @@ export function Testimonials() {
             <div className="flex gap-4 pt-4">
               <button 
                 onClick={handlePrev}
-                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-eduzin-dark hover:text-white transition-colors"
+                className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-eduzin-dark hover:text-white transition-colors cursor-pointer"
                 aria-label="Previous testimonial"
               >
                 <ArrowLeft size={16} />
               </button>
               <button 
                 onClick={handleNext}
-                className="w-10 h-10 rounded-full bg-eduzin-dark text-white flex items-center justify-center hover:bg-gray-800 transition-colors"
+                className="w-10 h-10 rounded-full bg-eduzin-dark text-white flex items-center justify-center hover:bg-gray-800 transition-colors cursor-pointer"
                 aria-label="Next testimonial"
               >
                 <ArrowRight size={16} />

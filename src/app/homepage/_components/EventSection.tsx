@@ -118,14 +118,14 @@ export function EventSection() {
              <div className="absolute bottom-8 right-8 flex gap-2">
                 <button 
                   onClick={handlePrev}
-                  className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors"
+                  className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors cursor-pointer"
                   aria-label="Previous Event"
                 >
                   <ArrowLeft size={16}/>
                 </button>
                 <button 
                   onClick={handleNext}
-                  className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md text-white flex items-center justify-center hover:bg-white/30 transition-colors"
+                  className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md text-white flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer"
                   aria-label="Next Event"
                 >
                   <ArrowRight size={16}/>

@@ -15,7 +15,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
             <span className="inline-block px-3 py-1 border border-gray-300 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Areas of Study</span>
             <h2 className="text-4xl font-medium max-w-lg leading-tight">Advance your career and education through.</h2>
           </div>
-          <button className="mt-6 md:mt-0 bg-eduzin-dark text-white px-6 py-3 rounded-full flex items-center gap-2 text-sm font-bold hover:bg-opacity-90 transition-colors">
+          <button className="mt-6 md:mt-0 bg-eduzin-dark text-white px-6 py-3 rounded-full flex items-center gap-2 text-sm font-bold hover:bg-opacity-90 transition-colors cursor-pointer">
             APPLY NOW <ArrowRight size={16} />
           </button>
         </div>
