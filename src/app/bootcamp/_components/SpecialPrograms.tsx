@@ -17,7 +17,7 @@ export function SpecialPrograms() {
                     <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
                         <div className="grid md:grid-cols-12 gap-0">
                             <div className="md:col-span-5 relative h-64 md:h-auto overflow-hidden">
-                                <img alt="Scite Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="file:///C:/Users/zaki/.gemini/antigravity/brain/a2a3be06-0cc2-447c-804f-37bce9368fa7/scite_class_icon_1765505710175.png" />
+                                <img alt="Scite Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="/images/bootcamp/scite.png" />
                                 <div className="absolute inset-0 bg-bootcamp-primary/20 mix-blend-multiply"></div>
                             </div>
                             <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
@@ -51,7 +51,7 @@ export function SpecialPrograms() {
                     <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
                         <div className="grid md:grid-cols-12 gap-0">
                             <div className="md:col-span-5 relative h-64 md:h-auto overflow-hidden">
-                                <img alt="NotebookLM Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="file:///C:/Users/zaki/.gemini/antigravity/brain/a2a3be06-0cc2-447c-804f-37bce9368fa7/notebooklm_class_icon_1765505727574.png" />
+                                <img alt="NotebookLM Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="/images/bootcamp/notebooklm.png" />
                                 <div className="absolute inset-0 bg-bootcamp-primary/20 mix-blend-multiply"></div>
                             </div>
                             <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
@@ -85,7 +85,7 @@ export function SpecialPrograms() {
                     <div className="group relative bg-white dark:bg-program-surface-dark rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800">
                         <div className="grid md:grid-cols-12 gap-0">
                             <div className="md:col-span-5 relative h-64 md:h-auto overflow-hidden">
-                                <img alt="Cursor Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="file:///C:/Users/zaki/.gemini/antigravity/brain/a2a3be06-0cc2-447c-804f-37bce9368fa7/cursor_class_icon_1765505746075.png" />
+                                <img alt="Cursor Class" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="/images/bootcamp/cursor.png" />
                                 <div className="absolute inset-0 bg-bootcamp-primary/20 mix-blend-multiply"></div>
                             </div>
                             <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
