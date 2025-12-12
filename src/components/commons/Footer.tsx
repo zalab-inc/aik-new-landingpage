@@ -2,7 +2,7 @@ import { Facebook, Camera, AtSign, Briefcase, MapPin, Phone, Mail } from 'lucide
 
 export function Footer() {
     return (
-        <footer className="bg-white dark:bg-[#1A1D1C] border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+        <footer className="bg-white dark:bg-[#27272A] border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-2 lg:col-span-1">
@@ -32,6 +32,7 @@ export function Footer() {
                         <h4 className="font-bold text-about-primary dark:text-white mb-6">Quick Links</h4>
                         <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-400">
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/about">About Us</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/contact">Contact Us</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Admissions</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Academic Programs</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Campus Life</a></li>

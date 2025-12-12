@@ -48,7 +48,7 @@
   --color-eduzin-accent: #E8F5E9;
   --color-eduzin-text: #1A1A1A;
   --color-eduzin-gray: #666666;
-  
+
   /* About Page Colors */
   --color-about-primary: #1C3026;
   --color-about-secondary: #D4B692;
@@ -56,6 +56,17 @@
   --color-about-bg-dark: #0F1110;
   --color-about-surface-light: #FFFFFF;
   --color-about-surface-dark: #1A1D1C;
+
+  /* Contact Page Colors */
+  --color-contact-primary: #234238;
+  --color-contact-secondary: #EAE7E0;
+  --color-contact-accent: #8B9D83;
+  --color-contact-bg-light: #FAFAF9;
+  --color-contact-bg-dark: #18181B;
+  --color-contact-surface-light: #FFFFFF;
+  --color-contact-surface-dark: #27272A;
+  --color-contact-text-light: #234238;
+  --color-contact-text-dark: #E4E4E7;
 }
 
 :root {
@@ -131,6 +142,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -140,6 +152,7 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -151,6 +164,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -161,6 +175,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
