@@ -46,7 +46,7 @@ export function HighlightedEvent() {
                                             Main Auditorium
                                         </span>
                                     </div>
-                                    <button className="bg-white text-schedule-primary hover:bg-gray-100 font-semibold px-6 py-3 rounded-full transition-colors flex items-center gap-2">
+                                    <button className="bg-white text-schedule-primary hover:bg-gray-100 font-semibold px-6 py-3 rounded-full transition-colors flex items-center gap-2 cursor-pointer">
                                         Register Now
                                         <ArrowRight className="w-4 h-4" />
                                     </button>

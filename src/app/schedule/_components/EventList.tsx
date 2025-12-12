@@ -53,7 +53,7 @@ export function EventList() {
         <section className="pb-24">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 {events.map((event, index) => (
-                    <div key={event.id} className="group relative flex gap-8 md:gap-12 mb-12">
+                    <div key={event.id} className="group relative flex gap-8 md:gap-12 mb-12 cursor-pointer">
                         <div className="flex-shrink-0 w-20 md:w-24 text-center pt-2">
                             <span className="block text-4xl font-serif font-bold text-schedule-primary dark:text-white mb-1">
                                 {event.day}
@@ -86,7 +86,7 @@ export function EventList() {
                                             </span>
                                         </div>
                                     </div>
-                                    <a className="hidden md:flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:bg-schedule-primary hover:border-schedule-primary hover:text-white transition-all" href="#">
+                                    <a className="hidden md:flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:bg-schedule-primary hover:border-schedule-primary hover:text-white transition-all cursor-pointer" href="#">
                                         <ArrowUpRight className="w-5 h-5" />
                                     </a>
                                 </div>
@@ -115,7 +115,7 @@ export function EventList() {
                                     </div>
                                 )}
                                 <div className="mt-6 md:hidden">
-                                    <a className="block w-full text-center py-2 rounded-lg border border-gray-300 dark:border-gray-600 text-sm font-medium hover:bg-schedule-primary hover:text-white hover:border-schedule-primary transition" href="#">
+                                    <a className="block w-full text-center py-2 rounded-lg border border-gray-300 dark:border-gray-600 text-sm font-medium hover:bg-schedule-primary hover:text-white hover:border-schedule-primary transition cursor-pointer" href="#">
                                         View Details
                                     </a>
                                 </div>
@@ -125,7 +125,7 @@ export function EventList() {
                 ))}
 
                 <div className="text-center mt-12">
-                    <button className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-schedule-primary text-schedule-primary dark:text-white hover:bg-schedule-primary hover:text-white dark:hover:border-white transition-all font-medium">
+                    <button className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-schedule-primary text-schedule-primary dark:text-white hover:bg-schedule-primary hover:text-white dark:hover:border-white transition-all font-medium cursor-pointer">
                         Load More Events
                         <ChevronDown className="w-5 h-5" />
                     </button>

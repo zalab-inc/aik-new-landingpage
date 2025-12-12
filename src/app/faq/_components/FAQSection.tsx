@@ -80,12 +80,12 @@ export function FAQSection() {
                                     <div
                                         key={questionIndex}
                                         className={`rounded-xl overflow-hidden transition-all duration-300 ${isOpen
-                                                ? 'bg-white dark:bg-faq-surface-dark shadow-lg border border-faq-primary/20 dark:border-gray-700'
-                                                : 'bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700'
+                                            ? 'bg-white dark:bg-faq-surface-dark shadow-lg border border-faq-primary/20 dark:border-gray-700'
+                                            : 'bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700'
                                             }`}
                                     >
                                         <button
-                                            className="w-full flex items-center justify-between p-5 text-left"
+                                            className="w-full flex items-center justify-between p-5 text-left cursor-pointer hover:bg-gray-50/50 dark:hover:bg-gray-700/30 transition-colors"
                                             onClick={() => toggleItem(categoryIndex, questionIndex)}
                                         >
                                             <span className={`font-medium ${isOpen ? 'text-faq-primary dark:text-white' : 'text-gray-700 dark:text-gray-300'}`}>
