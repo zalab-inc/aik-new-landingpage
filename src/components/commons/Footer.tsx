@@ -73,7 +73,7 @@ export function Footer() {
                 <div className="border-t border-gray-100 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 dark:text-gray-400">
                     <p>© 2024 KelasInovatif Community. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a className="hover:text-about-primary dark:hover:text-white transition" href="#">Privacy Policy</a>
+                        <a className="hover:text-about-primary dark:hover:text-white transition" href="/privacy">Privacy Policy</a>
                         <a className="hover:text-about-primary dark:hover:text-white transition" href="#">Terms of Service</a>
                     </div>
                 </div>

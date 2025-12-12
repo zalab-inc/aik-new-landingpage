@@ -101,6 +101,15 @@
   --color-private-bg-dark: #121212;
   --color-private-surface-light: #FFFFFF;
   --color-private-surface-dark: #1E1E1E;
+
+  /* Privacy Page Colors */
+  --color-privacy-primary: #1D322C;
+  --color-privacy-primary-light: #2A453C;
+  --color-privacy-accent: #2E4F3E;
+  --color-privacy-bg-light: #F8F7F3;
+  --color-privacy-bg-dark: #121212;
+  --color-privacy-surface-light: #FFFFFF;
+  --color-privacy-surface-dark: #1E1E1E;
 }
 
 :root {
