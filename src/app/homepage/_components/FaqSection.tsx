@@ -12,15 +12,15 @@ export function FaqSection() {
   return (
     <section className="py-20 bg-white" aria-labelledby="faq-heading">
       <div className="container mx-auto px-4 md:px-8">
-        
+
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 border border-gray-300 rounded-full text-xs font-bold uppercase tracking-wider mb-4">FAQ & Answer</span>
-          <h2 id="faq-heading" className="text-4xl font-medium">Answers to your questions, every<br/>step of the way.</h2>
+          <h2 id="faq-heading" className="text-4xl font-medium">Answers to your questions, every<br />step of the way.</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="h-[500px] overflow-hidden rounded-lg">
-             <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2669&auto=format&fit=crop" className="w-full h-full object-cover" alt="Student thinking" />
+            <img src="/community/community.jpeg" className="w-full h-full object-cover" alt="Student thinking" />
           </div>
 
           <Accordion type="single" collapsible defaultValue="item-0" className="w-full">
