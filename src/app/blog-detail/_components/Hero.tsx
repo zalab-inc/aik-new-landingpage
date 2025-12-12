@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Hero() {
     return (
-        <header className="relative bg-blog-secondary dark:bg-blog-surface-dark pt-32 pb-32 lg:pt-40 lg:pb-48 overflow-hidden">
+        <header className="relative bg-blog-secondary dark:bg-blog-surface-dark pt-16 pb-32 lg:pt-20 lg:pb-48 overflow-hidden">
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blog-primary/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-blog-primary/10 rounded-full blur-3xl"></div>
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
