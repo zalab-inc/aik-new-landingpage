@@ -19,10 +19,10 @@ export function Navbar() {
         <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#EAE7E0]/90 dark:bg-[#18181B]/90 backdrop-blur-md shadow-sm border-b border-[#234238]/10 dark:border-white/10 ${scrolled ? 'py-4' : 'py-6'}`}>
             <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
                 {/* Logo */}
-                <div className="flex items-center gap-2">
+                <a href="/" className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
                     <div className="w-8 h-8 rounded-full bg-eduzin-dark flex items-center justify-center text-white font-serif font-bold italic">K</div>
                     <span className="text-xl font-bold tracking-tight text-eduzin-dark dark:text-white">KelasInovatif</span>
-                </div>
+                </a>
 
                 {/* Desktop Links */}
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700 dark:text-gray-300">
