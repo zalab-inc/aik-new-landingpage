@@ -24,9 +24,6 @@ export function Hero() {
                         Explore Regular Programs
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </a>
-                    <a className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-surface-dark text-bootcamp-primary dark:text-white border border-gray-200 dark:border-gray-700 rounded-full font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-all" href="#special-programs">
-                        View Special Tracks
-                    </a>
                 </div>
             </div>
         </header>
