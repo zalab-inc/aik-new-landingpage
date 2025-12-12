@@ -21,7 +21,7 @@ export function Navbar() {
                 {/* Logo */}
                 <a href="/" className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
                     <div className="w-8 h-8 rounded-full bg-eduzin-dark flex items-center justify-center text-white font-serif font-bold italic">K</div>
-                    <span className="text-xl font-bold tracking-tight text-eduzin-dark dark:text-white">KelasInovatif</span>
+                    <span className="font-serif font-bold text-xl text-eduzin-dark dark:text-white">KelasInovatif</span>
                 </a>
 
                 {/* Desktop Links */}
