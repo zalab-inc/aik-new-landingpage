@@ -2,7 +2,7 @@ import React from "react";
 
 export const ContactHero = () => {
     return (
-        <header className="relative bg-[var(--color-contact-secondary)] dark:bg-gray-900 py-24 overflow-hidden">
+        <header className="relative bg-[var(--color-contact-secondary)] dark:bg-gray-900 pt-32 pb-24 overflow-hidden">
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-[var(--color-contact-accent)]/20 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-[var(--color-contact-primary)]/10 rounded-full blur-3xl"></div>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fadeIn">
