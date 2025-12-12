@@ -3,6 +3,7 @@ import { Navbar } from '@/components/commons/Navbar';
 import { Footer } from '@/components/commons/Footer';
 import { Hero } from './_components/Hero';
 import { EventFilters } from './_components/EventFilters';
+import { HighlightedEvent } from './_components/HighlightedEvent';
 import { EventList } from './_components/EventList';
 import { FeaturedReplay } from './_components/FeaturedReplay';
 
@@ -12,6 +13,7 @@ export default function SchedulePage() {
             <Navbar />
             <Hero />
             <EventFilters />
+            <HighlightedEvent />
             <EventList />
             <FeaturedReplay />
             <Footer />
