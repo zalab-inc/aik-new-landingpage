@@ -12,6 +12,8 @@ import { EventSection } from './_components/EventSection';
 import { FaqSection } from './_components/FaqSection';
 import { NewsSection } from './_components/NewsSection';
 import { Footer } from '@/components/commons/Footer';
+import { BlogSection } from '@/components/commons/BlogSection';
+import { NewsletterSection } from '@/components/commons/NewsletterSection';
 import { AIChatBot } from '@/components/commons/AIChatBot';
 import { CourseDetailView } from './_components/CourseDetailView';
 import { Course } from './types';
@@ -48,6 +50,8 @@ export default function HomePage() {
       <FaqSection />
       <NewsSection />
       <div id="contact">
+        <BlogSection />
+        <NewsletterSection />
         <Footer />
       </div>
       <AIChatBot />

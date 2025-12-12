@@ -48,6 +48,14 @@
   --color-eduzin-accent: #E8F5E9;
   --color-eduzin-text: #1A1A1A;
   --color-eduzin-gray: #666666;
+  
+  /* About Page Colors */
+  --color-about-primary: #1C3026;
+  --color-about-secondary: #D4B692;
+  --color-about-bg-light: #F9F8F6;
+  --color-about-bg-dark: #0F1110;
+  --color-about-surface-light: #FFFFFF;
+  --color-about-surface-dark: #1A1D1C;
 }
 
 :root {

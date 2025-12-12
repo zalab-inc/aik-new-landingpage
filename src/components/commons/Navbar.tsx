@@ -26,8 +26,8 @@ export function Navbar() {
 
                 {/* Desktop Links */}
                 <div className={`hidden md:flex items-center gap-8 text-sm font-medium ${scrolled ? 'text-gray-700' : 'text-white'}`}>
-                    <a href="#" className="hover:opacity-75 transition-opacity cursor-pointer">HOME +</a>
-                    <a href="#about" className="hover:opacity-75 transition-opacity cursor-pointer">ABOUT</a>
+                    <a href="/" className="hover:opacity-75 transition-opacity cursor-pointer">HOME +</a>
+                    <a href="/about" className="hover:opacity-75 transition-opacity cursor-pointer">ABOUT</a>
                     <a href="#pages" className="hover:opacity-75 transition-opacity cursor-pointer">PAGES +</a>
                     <a href="#contact" className="hover:opacity-75 transition-opacity cursor-pointer">CONTACT</a>
                 </div>
@@ -48,8 +48,8 @@ export function Navbar() {
             {/* Mobile Menu */}
             {mobileMenuOpen && (
                 <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-8 px-4 flex flex-col gap-4 text-center">
-                    <a href="#" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Home</a>
-                    <a href="#about" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>About</a>
+                    <a href="/" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Home</a>
+                    <a href="/about" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>About</a>
                     <a href="#contact" className="text-gray-800 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Contact</a>
                 </div>
             )}
