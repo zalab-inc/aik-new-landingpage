@@ -48,8 +48,8 @@ export function ProgramList() {
                                     </div>
                                 </div>
                                 <div className="pt-6">
-                                    <a className="inline-flex items-center text-program-primary dark:text-white font-semibold group-hover:underline" href="#">
-                                        View Program Details <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                    <a className="inline-flex items-center gap-2 px-6 py-3 bg-program-primary dark:bg-program-primary text-white rounded-lg font-semibold hover:bg-program-primary/90 dark:hover:bg-program-primary/80 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105" href="#">
+                                        View Program Details <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                                     </a>
                                 </div>
                             </div>
@@ -85,8 +85,8 @@ export function ProgramList() {
                                     </div>
                                 </div>
                                 <div className="pt-6">
-                                    <a className="inline-flex items-center text-program-primary dark:text-white font-semibold group-hover:underline" href="#">
-                                        View Program Details <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                    <a className="inline-flex items-center gap-2 px-6 py-3 bg-program-primary dark:bg-program-primary text-white rounded-lg font-semibold hover:bg-program-primary/90 dark:hover:bg-program-primary/80 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105" href="#">
+                                        View Program Details <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                                     </a>
                                 </div>
                             </div>
@@ -142,8 +142,8 @@ export function ProgramList() {
                                     </div>
                                 </div>
                                 <div className="pt-6">
-                                    <a className="inline-flex items-center text-program-primary dark:text-white font-semibold group-hover:underline" href="#">
-                                        View Program Details <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                    <a className="inline-flex items-center gap-2 px-6 py-3 bg-program-primary dark:bg-program-primary text-white rounded-lg font-semibold hover:bg-program-primary/90 dark:hover:bg-program-primary/80 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105" href="#">
+                                        View Program Details <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                                     </a>
                                 </div>
                             </div>
