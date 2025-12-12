@@ -29,8 +29,8 @@ export function BlogGrid() {
                             <button
                                 key={category}
                                 className={`px-5 py-2 rounded-full text-sm font-medium transition shadow-md ${selectedCategory === category
-                                        ? 'bg-blog-primary text-white'
-                                        : 'bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white'
+                                    ? 'bg-blog-primary text-white'
+                                    : 'bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white'
                                     }`}
                                 onClick={() => setSelectedCategory(category)}
                             >
@@ -53,45 +53,46 @@ export function BlogGrid() {
                 {/* Blog Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {filteredPosts.map((post) => (
-                        <article
-                            key={post.id}
-                            className="flex flex-col bg-white dark:bg-blog-surface-dark rounded-xl overflow-hidden hover:shadow-xl transition duration-300 border border-gray-100 dark:border-gray-800 group"
-                        >
-                            <div className="relative h-56 overflow-hidden">
-                                <img
-                                    alt={post.title}
-                                    className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
-                                    src={post.image}
-                                />
-                                <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded text-blog-primary dark:text-white">
-                                    {post.category}
-                                </div>
-                            </div>
-                            <div className="p-6 flex-1 flex flex-col">
-                                <div className="text-xs text-gray-500 dark:text-gray-400 mb-3 uppercase tracking-wide font-medium">
-                                    {post.date}
-                                </div>
-                                <h3 className="text-xl font-serif font-semibold text-blog-primary dark:text-white mb-3 group-hover:text-blog-primary/80 dark:group-hover:text-white/80 transition">
-                                    {post.title}
-                                </h3>
-                                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
-                                    {post.excerpt}
-                                </p>
-                                <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
-                                    <div className="flex items-center gap-2">
-                                        <img
-                                            alt={post.author.name}
-                                            className="w-6 h-6 rounded-full"
-                                            src={post.author.image}
-                                        />
-                                        <span className="text-xs font-medium text-gray-700 dark:text-gray-300">
-                                            {post.author.name}
-                                        </span>
+                        <a key={post.id} href="/blog-detail">
+                            <article
+                                className="flex flex-col bg-white dark:bg-blog-surface-dark rounded-xl overflow-hidden hover:shadow-xl transition duration-300 border border-gray-100 dark:border-gray-800 group"
+                            >
+                                <div className="relative h-56 overflow-hidden">
+                                    <img
+                                        alt={post.title}
+                                        className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
+                                        src={post.image}
+                                    />
+                                    <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded text-blog-primary dark:text-white">
+                                        {post.category}
                                     </div>
-                                    <span className="text-xs text-gray-400">{post.readTime}</span>
                                 </div>
-                            </div>
-                        </article>
+                                <div className="p-6 flex-1 flex flex-col">
+                                    <div className="text-xs text-gray-500 dark:text-gray-400 mb-3 uppercase tracking-wide font-medium">
+                                        {post.date}
+                                    </div>
+                                    <h3 className="text-xl font-serif font-semibold text-blog-primary dark:text-white mb-3 group-hover:text-blog-primary/80 dark:group-hover:text-white/80 transition">
+                                        {post.title}
+                                    </h3>
+                                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
+                                        {post.excerpt}
+                                    </p>
+                                    <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                                        <div className="flex items-center gap-2">
+                                            <img
+                                                alt={post.author.name}
+                                                className="w-6 h-6 rounded-full"
+                                                src={post.author.image}
+                                            />
+                                            <span className="text-xs font-medium text-gray-700 dark:text-gray-300">
+                                                {post.author.name}
+                                            </span>
+                                        </div>
+                                        <span className="text-xs text-gray-400">{post.readTime}</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
                     ))}
                 </div>
 
