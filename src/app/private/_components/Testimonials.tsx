@@ -39,7 +39,7 @@ export function Testimonials() {
                     <div className="bg-private-bg-light dark:bg-private-bg-dark p-8 rounded-3xl border border-gray-100 dark:border-gray-800 relative">
                         <Quote className="text-gray-200 dark:text-gray-700 absolute top-6 right-6 w-16 h-16 opacity-50" />
                         <div className="flex items-center gap-4 mb-6 relative z-10">
-                            <img alt="Anna Lee" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_vxfK4YhBrsXPXRh9Jcu_W3x70aZm74tzMARat1XrMFcCBx8Rg5vZS4FFqUqr0JJXiEPIC86A1I1r1skWJkdT_wQMnz-arrFQK3r-qRDKbo-kqvmOzKLIJikertXCpZPEb2pNHARzCOSYLQ1GQ6yhRpkMZXhCSXxfAK5GTtgkG662x4A7EoGDvvhtJOQO6Af4gmxfaP37QmxGmSagcN0Xj3ki1Jw-LiaA9DudLr60SZgvBMWW27iEJDec5N1SnrFl1LbAkHOhWXY" />
+                            <img alt="Anna Lee" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQeA_0C9-u524JAtKqwbXfyl84J0n_uNn5H90i4rQ6y2M6w1uJ8J4vL2r5O9P8o7I3l6K5n4m2j1h0g9f8e7d6c5b4a3Z2y1x0w9v8u7t6s5r4q3p2o1n0m9l8k7j6h5g4f3e2d1c0b9a8Z7y6x5w4v3u2t1s0r9q8p7o6n5m4l3k2j1i0h9g8f7e6d5c4b3a2Z1y0x9w8v7u6t5s4r3q2" />
                             <div>
                                 <p className="font-bold text-private-primary dark:text-white">Anna Lee</p>
                                 <p className="text-xs text-gray-500">Research Assistant</p>
@@ -60,7 +60,7 @@ export function Testimonials() {
                     <div className="bg-private-bg-light dark:bg-private-bg-dark p-8 rounded-3xl border border-gray-100 dark:border-gray-800 relative">
                         <Quote className="text-gray-200 dark:text-gray-700 absolute top-6 right-6 w-16 h-16 opacity-50" />
                         <div className="flex items-center gap-4 mb-6 relative z-10">
-                            <img alt="David Ross" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSpALF3snsD6vn6vpbRm_43JQqhoiMneR6dFOsIpbVChmJ4godaaqJYxzvHUUI56ZKvij6MPdvRe4VmRIRgfYe0AGZqNESzvhxlBA9HimylbtBENzXpo0alTfj_4GwsPUHLlB1JTjOhopcstr90kh30tzL_VQ9pFUSJaF3vCagyEgTkTtO7W6IsldKzqEB6Z8F3kZ_JHADFSOd1SPEvnrXe_Ez0utNUKq7DphvTQKYrU2BVjs8Oj4O2SArigPByQFc30NNksjYaj0" />
+                            <img alt="David Ross" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzShG3o5Q2NxBgFG6in_mwqPzcQBhop42O1olN4-zYu3bLN-juTm_7yA2pqgTC6oo2NFszsWMKb-evQvfxwwlMLHUzA5DLnN4h4TNzLl3wckTJsnhzFIbAuv2o1n1v3bNdgozq2RXghXq922263D17kOMkGAuSgv-pKxtc5eQTKG5-_2QNxNk22rLMC7a88VBP_d0bNJovLLUptP4pPfpdU0Tm_72BpXEMVQ8pxmvFt_DUoOvXtM12WzmLlNnVb62lo0_5XhOgsHM" />
                             <div>
                                 <p className="font-bold text-private-primary dark:text-white">David Ross</p>
                                 <p className="text-xs text-gray-500">Masters Student</p>
