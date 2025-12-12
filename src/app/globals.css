@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -67,6 +68,15 @@
   --color-contact-surface-dark: #27272A;
   --color-contact-text-light: #234238;
   --color-contact-text-dark: #E4E4E7;
+
+  /* Community Page Colors - extracted from original HTML */
+  --color-community-primary: #234234;
+  --color-community-secondary: #D1D5DB;
+  --color-community-accent: #F3F4F6;
+  --color-community-bg-light: #F9FAFB;
+  --color-community-bg-dark: #111827;
+  --color-community-card-dark: #1F2937;
+  --color-community-text-muted: #9CA3AF;
 }
 
 :root {
