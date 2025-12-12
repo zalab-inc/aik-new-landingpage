@@ -9,6 +9,13 @@ import { CommunityCalendar } from './_components/CommunityCalendar';
 import { CommunityLeader } from './_components/CommunityLeader';
 import { BeyondGraduation } from './_components/BeyondGraduation';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Community - KelasInovatif University',
+    description: 'Join our vibrant community of learners and educators. Participate in clubs, events, and discussions.',
+};
+
 export default function CommunityPage() {
     return (
         <main className="bg-community-bg-light dark:bg-community-bg-dark text-gray-800 dark:text-gray-200 transition-colors duration-300 font-sans min-h-screen flex flex-col">

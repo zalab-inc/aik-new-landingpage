@@ -6,6 +6,13 @@ import { CategoryCards } from './_components/CategoryCards';
 import { FAQSection } from './_components/FAQSection';
 import { ContactCTA } from './_components/ContactCTA';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'FAQ - KelasInovatif University',
+    description: 'Find answers to frequently asked questions about our programs, admissions, and campus life.',
+};
+
 export default function FAQPage() {
     return (
         <main className="bg-gray-50 dark:bg-faq-bg-dark min-h-screen">

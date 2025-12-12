@@ -7,6 +7,13 @@ import { InquiryForm } from './_components/InquiryForm';
 import { Testimonials } from './_components/Testimonials';
 import { WaitlistCTA } from './_components/WaitlistCTA';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Private Class - KelasInovatif University',
+    description: 'Experience personalized learning with our Private Classes. One-on-one mentorship and tailored curriculum.',
+};
+
 export default function PrivatePage() {
     return (
         <div className="min-h-screen bg-private-bg-light dark:bg-private-bg-dark font-sans text-gray-800 dark:text-gray-200">
