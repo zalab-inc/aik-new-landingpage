@@ -32,6 +32,7 @@ export function Footer() {
                         <h4 className="font-bold text-about-primary dark:text-white mb-6">Quick Links</h4>
                         <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-400">
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/about">About Us</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/community">Community</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/contact">Contact Us</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Admissions</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Academic Programs</a></li>
