@@ -39,7 +39,7 @@ export function Testimonials() {
                     <div className="bg-private-bg-light dark:bg-private-bg-dark p-8 rounded-3xl border border-gray-100 dark:border-gray-800 relative">
                         <Quote className="text-gray-200 dark:text-gray-700 absolute top-6 right-6 w-16 h-16 opacity-50" />
                         <div className="flex items-center gap-4 mb-6 relative z-10">
-                            <div className="w-12 h-12 rounded-full bg-private-primary/10 flex items-center justify-center text-private-primary font-bold">AL</div>
+                            <img alt="Anna Lee" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_vxfK4YhBrsXPXRh9Jcu_W3x70aZm74tzMARat1XrMFcCBx8Rg5vZS4FFqUqr0JJXiEPIC86A1I1r1skWJkdT_wQMnz-arrFQK3r-qRDKbo-kqvmOzKLIJikertXCpZPEb2pNHARzCOSYLQ1GQ6yhRpkMZXhCSXxfAK5GTtgkG662x4A7EoGDvvhtJOQO6Af4gmxfaP37QmxGmSagcN0Xj3ki1Jw-LiaA9DudLr60SZgvBMWW27iEJDec5N1SnrFl1LbAkHOhWXY" />
                             <div>
                                 <p className="font-bold text-private-primary dark:text-white">Anna Lee</p>
                                 <p className="text-xs text-gray-500">Research Assistant</p>
@@ -60,7 +60,7 @@ export function Testimonials() {
                     <div className="bg-private-bg-light dark:bg-private-bg-dark p-8 rounded-3xl border border-gray-100 dark:border-gray-800 relative">
                         <Quote className="text-gray-200 dark:text-gray-700 absolute top-6 right-6 w-16 h-16 opacity-50" />
                         <div className="flex items-center gap-4 mb-6 relative z-10">
-                            <div className="w-12 h-12 rounded-full bg-private-primary/10 flex items-center justify-center text-private-primary font-bold">DR</div>
+                            <img alt="David Ross" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSpALF3snsD6vn6vpbRm_43JQqhoiMneR6dFOsIpbVChmJ4godaaqJYxzvHUUI56ZKvij6MPdvRe4VmRIRgfYe0AGZqNESzvhxlBA9HimylbtBENzXpo0alTfj_4GwsPUHLlB1JTjOhopcstr90kh30tzL_VQ9pFUSJaF3vCagyEgTkTtO7W6IsldKzqEB6Z8F3kZ_JHADFSOd1SPEvnrXe_Ez0utNUKq7DphvTQKYrU2BVjs8Oj4O2SArigPByQFc30NNksjYaj0" />
                             <div>
                                 <p className="font-bold text-private-primary dark:text-white">David Ross</p>
                                 <p className="text-xs text-gray-500">Masters Student</p>
