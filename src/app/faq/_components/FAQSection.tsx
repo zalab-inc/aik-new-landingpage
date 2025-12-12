@@ -1,130 +1,116 @@
 "use client";
 
 import React, { useState } from 'react';
-import { ChevronDown, GraduationCap, BookOpen, Home } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
-interface FAQItem {
-    question: string;
-    answer: string;
-}
-
-interface FAQCategory {
-    id: string;
-    title: string;
-    icon: React.ReactNode;
-    iconColor: string;
-    faqs: FAQItem[];
-}
-
-const faqData: FAQCategory[] = [
+const faqCategories = [
     {
-        id: 'admissions',
-        title: 'Admissions & Financial Aid',
-        icon: <GraduationCap className="w-6 h-6" />,
-        iconColor: 'text-faq-secondary',
-        faqs: [
+        title: 'Admissions',
+        questions: [
             {
-                question: 'What is the application deadline for the Fall semester?',
-                answer: 'The regular decision application deadline for the Fall semester is January 15th. Early action applications are due by November 1st. We recommend submitting all required documents at least one week prior to the deadline to ensure processing.',
+                question: 'What are the admission requirements?',
+                answer: 'Admission requirements vary by program. Generally, we require a completed application form, transcripts, letters of recommendation, and a personal statement. Some programs may also require standardized test scores or portfolio submissions.',
             },
             {
-                question: 'Are scholarships available for international students?',
-                answer: 'Yes, KelasInovatif offers a range of merit-based scholarships for international students. All applicants are automatically considered for these awards upon submission of their application. Need-based aid is also available but requires a separate application submitted by February 1st.',
+                question: 'When is the application deadline?',
+                answer: 'Application deadlines vary by program and semester. For Fall admission, most programs have a deadline of March 1st. For Spring admission, the deadline is typically October 1st. We recommend applying early as some programs have limited spots.',
             },
             {
-                question: 'What standardized tests are required?',
-                answer: 'We are currently test-optional for most undergraduate programs. Submission of SAT or ACT scores is voluntary and will not negatively impact your application if omitted. However, international students may still need to provide proof of English proficiency (TOEFL/IELTS).',
+                question: 'Do you offer scholarships?',
+                answer: 'Yes, we offer a variety of scholarships based on academic merit, financial need, and special talents. Our scholarship committee reviews all applications automatically, and you may also apply for specific named scholarships through our financial aid portal.',
             },
         ],
     },
     {
-        id: 'academics',
-        title: 'Academics',
-        icon: <BookOpen className="w-6 h-6" />,
-        iconColor: 'text-faq-primary dark:text-faq-secondary',
-        faqs: [
+        title: 'Academic Programs',
+        questions: [
             {
-                question: 'How do I declare or change my major?',
-                answer: 'Students generally declare their major by the end of their sophomore year. To declare or change a major, you must meet with your academic advisor to discuss degree requirements and submit the "Change of Major" form through the student portal.',
+                question: 'Can I double major?',
+                answer: 'Yes, students can pursue a double major with approval from both departments. You will need to meet all requirements for both majors and work with academic advisors to create a feasible course schedule.',
             },
             {
-                question: 'What is the average class size?',
-                answer: 'We pride ourselves on a personalized learning environment. The average class size for undergraduate courses is 18 students, with a student-to-faculty ratio of 12:1, ensuring you get direct support from your professors.',
+                question: 'Are online classes available?',
+                answer: 'We offer a growing selection of online and hybrid courses. Some programs are available entirely online, while others offer a mix of in-person and virtual learning options. Check with your program advisor for specific availability.',
+            },
+            {
+                question: 'What is the student-to-faculty ratio?',
+                answer: 'Our student-to-faculty ratio is 12:1, ensuring personalized attention and mentorship opportunities. Small class sizes allow for more interactive learning experiences and stronger relationships with professors.',
             },
         ],
     },
     {
-        id: 'campus-life',
         title: 'Campus Life',
-        icon: <Home className="w-6 h-6" />,
-        iconColor: 'text-faq-primary dark:text-faq-secondary',
-        faqs: [
+        questions: [
             {
-                question: 'Is on-campus housing guaranteed for freshmen?',
-                answer: 'Yes, all first-year students are guaranteed housing in one of our designated freshmen residence halls. We believe living on campus is essential for transitioning to university life and building a community.',
+                question: 'Is housing guaranteed for freshmen?',
+                answer: 'Yes, on-campus housing is guaranteed for all first-year students who submit their housing application by the deadline. We offer a variety of residence hall options to fit different preferences and budgets.',
             },
             {
-                question: 'Can I bring a car to campus?',
-                answer: 'Parking is limited. While upperclassmen may apply for parking permits, freshmen are generally discouraged from bringing cars unless there are specific medical or employment needs. The campus is very walkable and serviced by a robust shuttle system.',
-            },
-            {
-                question: 'What health services are available?',
-                answer: 'The University Health Center offers comprehensive primary care, counseling services, and urgent care for minor injuries. All enrolled students have access to these services, most of which are covered by the mandatory student health fee.',
+                question: 'What extracurricular activities are available?',
+                answer: 'We have over 200 student organizations, including academic clubs, cultural groups, sports teams, performing arts, and community service organizations. Students can also start new clubs with proper approval.',
             },
         ],
     },
 ];
 
 export function FAQSection() {
-    const [openItems, setOpenItems] = useState<{ [key: string]: number }>({
-        admissions: 0, // First item in admissions is open by default
-    });
+    const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
 
-    const toggleItem = (categoryId: string, index: number) => {
+    const toggleItem = (categoryIndex: number, questionIndex: number) => {
+        const key = `${categoryIndex}-${questionIndex}`;
         setOpenItems((prev) => ({
             ...prev,
-            [categoryId]: prev[categoryId] === index ? -1 : index,
+            [key]: !prev[key],
         }));
     };
 
     return (
-        <div className="space-y-12">
-            {faqData.map((category) => (
-                <div key={category.id} className="scroll-mt-28" id={category.id}>
-                    <h2 className="text-2xl font-serif font-bold text-faq-primary dark:text-white mb-6 flex items-center gap-3">
-                        <span className={category.iconColor}>{category.icon}</span>
-                        {category.title}
-                    </h2>
-                    <div className="bg-faq-surface-light dark:bg-faq-surface-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800 overflow-hidden p-2">
-                        <div className="space-y-2">
-                            {category.faqs.map((faq, index) => (
-                                <div
-                                    key={index}
-                                    className="bg-white dark:bg-gray-800/30 rounded-lg"
-                                >
-                                    <button
-                                        className="flex justify-between items-center cursor-pointer p-5 w-full text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 rounded-lg transition-colors"
-                                        onClick={() => toggleItem(category.id, index)}
+        <section className="py-16 bg-white dark:bg-faq-bg-dark">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                {faqCategories.map((category, categoryIndex) => (
+                    <div key={categoryIndex} className="mb-12">
+                        <h2 className="text-2xl font-serif font-bold text-faq-primary dark:text-white mb-6">
+                            {category.title}
+                        </h2>
+                        <div className="space-y-3">
+                            {category.questions.map((item, questionIndex) => {
+                                const key = `${categoryIndex}-${questionIndex}`;
+                                const isOpen = openItems[key];
+                                return (
+                                    <div
+                                        key={questionIndex}
+                                        className={`rounded-xl overflow-hidden transition-all duration-300 ${isOpen
+                                                ? 'bg-white dark:bg-faq-surface-dark shadow-lg border border-faq-primary/20 dark:border-gray-700'
+                                                : 'bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700'
+                                            }`}
                                     >
-                                        <h3 className="text-base md:text-lg font-bold text-faq-text-light dark:text-faq-text-dark pr-4">
-                                            {faq.question}
-                                        </h3>
-                                        <ChevronDown
-                                            className={`transition-transform duration-300 text-gray-400 flex-shrink-0 ${openItems[category.id] === index ? 'rotate-180' : ''
+                                        <button
+                                            className="w-full flex items-center justify-between p-5 text-left"
+                                            onClick={() => toggleItem(categoryIndex, questionIndex)}
+                                        >
+                                            <span className={`font-medium ${isOpen ? 'text-faq-primary dark:text-white' : 'text-gray-700 dark:text-gray-300'}`}>
+                                                {item.question}
+                                            </span>
+                                            <ChevronDown
+                                                className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180 text-faq-primary' : ''
+                                                    }`}
+                                            />
+                                        </button>
+                                        <div
+                                            className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                                                 }`}
-                                        />
-                                    </button>
-                                    {openItems[category.id] === index && (
-                                        <div className="px-5 pb-5 pt-0 text-faq-muted-light dark:text-faq-muted-dark prose dark:prose-invert max-w-none text-sm md:text-base animate-fadeIn">
-                                            <p>{faq.answer}</p>
+                                        >
+                                            <div className="px-5 pb-5 text-gray-600 dark:text-gray-300 leading-relaxed">
+                                                {item.answer}
+                                            </div>
                                         </div>
-                                    )}
-                                </div>
-                            ))}
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
-                </div>
-            ))}
-        </div>
+                ))}
+            </div>
+        </section>
     );
 }

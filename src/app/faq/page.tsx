@@ -8,14 +8,12 @@ import { ContactCTA } from './_components/ContactCTA';
 
 export default function FAQPage() {
     return (
-        <main className="bg-faq-bg-light dark:bg-faq-bg-dark text-faq-text-light dark:text-faq-text-dark transition-colors duration-300 font-sans min-h-screen">
+        <main className="bg-gray-50 dark:bg-faq-bg-dark min-h-screen">
             <Navbar />
             <Hero />
-            <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 mb-24 relative z-10">
-                <CategoryCards />
-                <FAQSection />
-                <ContactCTA />
-            </section>
+            <CategoryCards />
+            <FAQSection />
+            <ContactCTA />
             <Footer />
         </main>
     );

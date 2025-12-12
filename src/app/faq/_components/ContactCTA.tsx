@@ -1,30 +1,33 @@
 import React from 'react';
+import { Mail, MessageCircle } from 'lucide-react';
 
 export function ContactCTA() {
     return (
-        <div className="mt-16 p-8 bg-faq-primary/5 dark:bg-faq-primary/10 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8 border border-faq-primary/10">
-            <div className="text-center md:text-left">
-                <h4 className="font-serif font-bold text-2xl text-faq-primary dark:text-white mb-2">
-                    Can't find what you're looking for?
-                </h4>
-                <p className="text-faq-muted-light dark:text-gray-400">
-                    Our support team is available Monday through Friday, 9am to 5pm.
+        <section className="py-16 bg-faq-accent dark:bg-faq-surface-dark">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 className="text-2xl font-serif font-bold text-faq-primary dark:text-white mb-4">
+                    Still have questions?
+                </h2>
+                <p className="text-gray-600 dark:text-gray-300 mb-8">
+                    Our support team is here to help. Reach out to us anytime.
                 </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                        href="/contact"
+                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-faq-primary text-white rounded-full font-medium hover:bg-faq-primary/90 transition shadow-lg"
+                    >
+                        <Mail className="w-5 h-5" />
+                        Contact Support
+                    </a>
+                    <a
+                        href="#"
+                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white dark:bg-gray-800 text-faq-primary dark:text-white border border-gray-200 dark:border-gray-700 rounded-full font-medium hover:border-faq-primary transition"
+                    >
+                        <MessageCircle className="w-5 h-5" />
+                        Live Chat
+                    </a>
+                </div>
             </div>
-            <div className="flex gap-4 flex-col sm:flex-row">
-                <a
-                    className="px-8 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-medium rounded-full hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors shadow-sm border border-gray-200 dark:border-gray-700 whitespace-nowrap text-center"
-                    href="/contact"
-                >
-                    Email Support
-                </a>
-                <a
-                    className="px-8 py-3 bg-faq-primary text-white font-medium rounded-full hover:bg-opacity-90 transition-colors shadow-md whitespace-nowrap text-center"
-                    href="/contact"
-                >
-                    Contact Us
-                </a>
-            </div>
-        </div>
+        </section>
     );
 }

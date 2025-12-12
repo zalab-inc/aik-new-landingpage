@@ -1,53 +1,56 @@
 import React from 'react';
 import { GraduationCap, BookOpen, Home } from 'lucide-react';
 
+const categories = [
+    {
+        icon: GraduationCap,
+        title: 'Admissions',
+        description: 'Learn about application deadlines, requirements, and the enrollment process.',
+        iconBg: 'bg-faq-primary/10 dark:bg-faq-primary/20',
+        iconColor: 'text-faq-primary dark:text-faq-accent',
+    },
+    {
+        icon: BookOpen,
+        title: 'Academic Programs',
+        description: 'Details on majors, minors, online courses, and degree requirements.',
+        iconBg: 'bg-faq-primary/10 dark:bg-faq-primary/20',
+        iconColor: 'text-faq-primary dark:text-faq-accent',
+    },
+    {
+        icon: Home,
+        title: 'Student Life',
+        description: 'Housing, campus facilities, clubs, and extracurricular activities.',
+        iconBg: 'bg-faq-primary/10 dark:bg-faq-primary/20',
+        iconColor: 'text-faq-primary dark:text-faq-accent',
+    },
+];
+
 export function CategoryCards() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            <a
-                className="bg-faq-surface-light dark:bg-faq-surface-dark p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-800 hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer block"
-                href="#admissions"
-            >
-                <div className="w-12 h-12 bg-faq-secondary/20 dark:bg-faq-secondary/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <GraduationCap className="w-6 h-6 text-faq-secondary" />
+        <section className="py-16 -mt-12 relative z-10">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {categories.map((category, index) => {
+                        const Icon = category.icon;
+                        return (
+                            <div
+                                key={index}
+                                className="bg-white dark:bg-faq-surface-dark rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+                            >
+                                <div className={`w-12 h-12 ${category.iconBg} rounded-xl flex items-center justify-center mb-4`}>
+                                    <Icon className={`w-6 h-6 ${category.iconColor}`} />
+                                </div>
+                                <h3 className="text-lg font-bold text-faq-primary dark:text-white mb-2">
+                                    {category.title}
+                                </h3>
+                                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                                    {category.description}
+                                </p>
+                            </div>
+                        );
+                    })}
                 </div>
-                <h3 className="font-serif font-bold text-lg mb-2 text-faq-text-light dark:text-faq-text-dark group-hover:text-faq-primary dark:group-hover:text-faq-secondary transition-colors">
-                    Admissions & Aid
-                </h3>
-                <p className="text-sm text-faq-muted-light dark:text-faq-muted-dark leading-relaxed">
-                    Application deadlines, requirements, scholarship opportunities, and tuition fees.
-                </p>
-            </a>
-
-            <a
-                className="bg-faq-surface-light dark:bg-faq-surface-dark p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-800 hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer block"
-                href="#academics"
-            >
-                <div className="w-12 h-12 bg-faq-primary/10 dark:bg-faq-primary/20 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <BookOpen className="w-6 h-6 text-faq-primary dark:text-faq-secondary" />
-                </div>
-                <h3 className="font-serif font-bold text-lg mb-2 text-faq-text-light dark:text-faq-text-dark group-hover:text-faq-primary dark:group-hover:text-faq-secondary transition-colors">
-                    Academics
-                </h3>
-                <p className="text-sm text-faq-muted-light dark:text-faq-muted-dark leading-relaxed">
-                    Course catalogs, research programs, faculty information, and grading policies.
-                </p>
-            </a>
-
-            <a
-                className="bg-faq-surface-light dark:bg-faq-surface-dark p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-800 hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer block"
-                href="#campus-life"
-            >
-                <div className="w-12 h-12 bg-faq-primary/10 dark:bg-faq-primary/20 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Home className="w-6 h-6 text-faq-primary dark:text-faq-secondary" />
-                </div>
-                <h3 className="font-serif font-bold text-lg mb-2 text-faq-text-light dark:text-faq-text-dark group-hover:text-faq-primary dark:group-hover:text-faq-secondary transition-colors">
-                    Campus Life
-                </h3>
-                <p className="text-sm text-faq-muted-light dark:text-faq-muted-dark leading-relaxed">
-                    Student housing, clubs, sports facilities, and dining options on campus.
-                </p>
-            </a>
-        </div>
+            </div>
+        </section>
     );
 }
