@@ -13,7 +13,7 @@ export const ContactFAQ = () => {
                 </p>
                 <a
                     className="inline-flex items-center text-[var(--color-contact-primary)] dark:text-white font-semibold border-b-2 border-[var(--color-contact-primary)] dark:border-white pb-1 hover:text-opacity-80 transition-opacity"
-                    href="#"
+                    href="/faq"
                 >
                     Visit FAQ Center
                     <span className="material-icons-outlined ml-2 text-sm">
