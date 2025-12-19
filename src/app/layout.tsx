@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "KelasInovatif University",
+  title: "Komunitas KelasInovatif",
   description: "Innovative learning for everyone",
 };
 
