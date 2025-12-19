@@ -61,7 +61,7 @@ export function Navbar() {
                         {/* Dropdown Menu */}
                         {programsDropdownOpen && (
                             <div className="absolute top-full left-0 pt-2 animate-in fade-in slide-in-from-top-2 duration-200">
-                                <div className="w-64 bg-gradient-to-br from-white/95 to-gray-50/95 dark:from-gray-800/95 dark:to-gray-900/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                                <div className="w-64 bg-[#EAE7E0]/95 dark:bg-[#18181B]/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
                                     {/* Decorative gradient overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-eduzin-dark/5 to-transparent pointer-events-none"></div>
 
@@ -136,7 +136,7 @@ export function Navbar() {
                         {/* Dropdown Menu */}
                         {informationDropdownOpen && (
                             <div className="absolute top-full left-0 pt-2 animate-in fade-in slide-in-from-top-2 duration-200">
-                                <div className="w-64 bg-gradient-to-br from-white/95 to-gray-50/95 dark:from-gray-800/95 dark:to-gray-900/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                                <div className="w-64 bg-[#EAE7E0]/95 dark:bg-[#18181B]/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
                                     {/* Decorative gradient overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-eduzin-dark/5 to-transparent pointer-events-none"></div>
 
