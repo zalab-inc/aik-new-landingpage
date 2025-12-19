@@ -34,6 +34,7 @@ export function Navbar() {
                     <a href="/" className="hover:opacity-75 transition-opacity cursor-pointer">HOME</a>
                     <a href="/about" className="hover:opacity-75 transition-opacity cursor-pointer">ABOUT</a>
                     <a href="/community" className="hover:opacity-75 transition-opacity cursor-pointer">COMMUNITY</a>
+                    <a href="/user-story" className="hover:opacity-75 transition-opacity cursor-pointer">USER STORY</a>
 
                     {/* Programs Dropdown */}
                     <div
@@ -216,6 +217,7 @@ export function Navbar() {
                     <a href="/" className="text-gray-800 dark:text-gray-200 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Home</a>
                     <a href="/about" className="text-gray-800 dark:text-gray-200 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>About</a>
                     <a href="/community" className="text-gray-800 dark:text-gray-200 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Community</a>
+                    <a href="/user-story" className="text-gray-800 dark:text-gray-200 font-medium cursor-pointer" onClick={() => setMobileMenuOpen(false)}>User Story</a>
 
                     {/* Programs Dropdown Mobile */}
                     <div className="flex flex-col gap-2">
