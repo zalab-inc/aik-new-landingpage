@@ -1,30 +1,43 @@
-import React from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export function Hero() {
     return (
-        <section className="relative pt-32 pb-20 overflow-hidden">
-            <div className="absolute inset-0 z-0 opacity-10 dark:opacity-5 pointer-events-none">
-                <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <pattern height="40" id="grid" patternUnits="userSpaceOnUse" width="40">
-                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5"></path>
-                        </pattern>
-                    </defs>
-                    <rect fill="url(#grid)" height="100%" width="100%"></rect>
-                </svg>
+        <header className="pt-32 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+            <div className="inline-block bg-[var(--color-schedule-bg-light)] dark:bg-[var(--color-schedule-bg-dark)] px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase mb-6 text-gray-600 dark:text-gray-400">
+                Academic Calendar
             </div>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <span className="inline-block py-1 px-3 rounded-full bg-schedule-accent dark:bg-gray-800 text-schedule-primary dark:text-green-400 text-xs font-semibold tracking-wider mb-6">
-                    ACADEMIC CALENDAR
-                </span>
-                <h1 className="text-5xl md:text-6xl font-serif font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                    Upcoming Events <br />
-                    <span className="italic font-normal text-gray-500 dark:text-gray-400">&amp; Schedule</span>
-                </h1>
-                <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
-                    Discover workshops, lectures, and campus activities designed to broaden your perspective and enhance your learning journey.
-                </p>
+            <h1 className="text-4xl md:text-6xl font-serif text-[var(--color-schedule-primary)] dark:text-white mb-4">
+                Upcoming Events <br />
+                <span className="italic font-normal text-gray-700 dark:text-gray-300">& Schedule</span>
+            </h1>
+            <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                Discover workshops, lectures, and campus activities designed to broaden your perspective and enhance your learning journey.
+            </p>
+            <div className="mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <button className="px-5 py-2 rounded-full bg-[var(--color-schedule-primary)] text-white text-sm font-medium shadow-md hover:opacity-90 transition">
+                        All Events
+                    </button>
+                    <button className="px-5 py-2 rounded-full bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm cursor-pointer">
+                        Workshops
+                    </button>
+                    <button className="px-5 py-2 rounded-full bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm cursor-pointer">
+                        Lectures
+                    </button>
+                    <button className="px-5 py-2 rounded-full bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm cursor-pointer">
+                        Ceremonies
+                    </button>
+                </div>
+                <div className="flex items-center bg-white dark:bg-[#1E1E1E] rounded-full px-2 py-1 border border-gray-200 dark:border-gray-700 shadow-sm">
+                    <button className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition rounded-full cursor-pointer">
+                        <ChevronLeft className="w-4 h-4" />
+                    </button>
+                    <span className="px-4 text-sm font-medium text-gray-700 dark:text-gray-200">October 2023</span>
+                    <button className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition rounded-full cursor-pointer">
+                        <ChevronRight className="w-4 h-4" />
+                    </button>
+                </div>
             </div>
-        </section>
+        </header>
     );
 }

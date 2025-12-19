@@ -1,58 +1,62 @@
-import React from 'react';
-import { Clock, MapPin, ArrowRight } from 'lucide-react';
+import { PlayCircle, ArrowRight, ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import Image from 'next/image';
 
 export function HighlightedEvent() {
     return (
-        <section className="pb-12">
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="group relative flex gap-8 md:gap-12">
-                    <div className="flex-shrink-0 w-20 md:w-24 text-center pt-2">
-                        <span className="block text-4xl font-serif font-bold text-schedule-primary dark:text-white mb-1">
-                            22
-                        </span>
-                        <span className="block text-sm font-medium text-gray-500 uppercase tracking-widest">
-                            OCT
-                        </span>
-                        <div className="hidden md:block h-full w-px bg-gray-200 dark:bg-gray-700 mx-auto mt-4"></div>
+        <section className="bg-[var(--color-schedule-primary)] text-white py-10 md:py-12 relative overflow-hidden rounded-xl mb-12 shadow-xl mx-auto max-w-7xl">
+            <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                <div className="absolute top-[-50%] left-[-20%] w-[80%] h-[200%] bg-gradient-to-r from-white to-transparent transform rotate-12 blur-3xl"></div>
+            </div>
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-6 md:px-10">
+                <div className="order-2 lg:order-1">
+                    <div className="flex items-center gap-2 text-emerald-300 font-semibold uppercase tracking-wider text-xs mb-3">
+                        <PlayCircle className="w-4 h-4" />
+                        Featured Replay
                     </div>
-                    <div className="flex-grow">
-                        <div className="relative bg-schedule-primary overflow-hidden rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                            <div className="absolute inset-0 z-0">
-                                <img
-                                    alt="Students gathering"
-                                    className="w-full h-full object-cover opacity-20 mix-blend-overlay"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk7h89z2lNbhE_KFW08s32IBGUu22uwJEWUhDpwuvVnyl6E6OuZoATuC0Krz1MX-btASPoH6rISBYbHIm0_XFzzKKlDdgp_xpmcls7Rm0l1Cp3HyWrd38D3I--tMPnMZcS7dseQWONxRiTgrOnFLydv9VGMofKzC-_p5s4oJ6XE6I2KrV98EsP4rMelvNaliWQwR8tXFsb7fNZ31A527TB0tpppBWl2-0WgUVOiUzFHZ96hEnWK4YAZLdY2XXw6eAuMPxZGeed5t4"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-r from-schedule-primary via-schedule-primary to-transparent opacity-90"></div>
-                            </div>
-                            <div className="relative z-10 p-6 md:p-8 flex flex-col md:flex-row gap-6">
-                                <div className="flex-1">
-                                    <span className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-yellow-400 text-schedule-primary mb-4">
-                                        Campus Highlight
-                                    </span>
-                                    <h3 className="text-3xl font-bold text-white mb-3 font-serif">
-                                        Annual Innovation Summit
-                                    </h3>
-                                    <p className="text-gray-200 mb-6 leading-relaxed max-w-lg">
-                                        Our biggest event of the year. Student showcases, guest panels from industry leaders, and the innovation awards ceremony.
-                                    </p>
-                                    <div className="flex flex-wrap gap-6 text-sm text-gray-200 mb-6">
-                                        <span className="flex items-center gap-2">
-                                            <Clock className="w-4 h-4 text-yellow-400" />
-                                            All Day Event
-                                        </span>
-                                        <span className="flex items-center gap-2">
-                                            <MapPin className="w-4 h-4 text-yellow-400" />
-                                            Main Auditorium
-                                        </span>
-                                    </div>
-                                    <button className="bg-white text-schedule-primary hover:bg-gray-100 font-semibold px-6 py-3 rounded-full transition-colors flex items-center gap-2 cursor-pointer">
-                                        Register Now
-                                        <ArrowRight className="w-4 h-4" />
-                                    </button>
-                                </div>
+                    <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4 leading-tight">
+                        Pablo Benzo's 50th ceremony 2025
+                    </h2>
+                    <div className="space-y-1 mb-6 text-emerald-100/80 font-light text-sm">
+                        <p><strong className="text-white font-medium">Timezone:</strong> 2:36 AM (GMT)</p>
+                        <p><strong className="text-white font-medium">Price:</strong> Free Entry</p>
+                        <p><strong className="text-white font-medium">Location:</strong> Main Auditorium</p>
+                    </div>
+                    <div className="flex items-center gap-3 mb-6">
+                        <img
+                            alt="Natalia T. Morgan"
+                            className="w-10 h-10 rounded-full border-2 border-emerald-600 object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpxo98xKfAoKf9eYIGlLTHrg0bpAxCPF5JJYlFS0d0IFzdVetmb7Ypx0nwCB3RHzjDAAAZmS4B2TxB8I1KyUhZpCGCpsPCrw8C3Jdy7_Iqaub6E5BTdfQASqvPo87RPjncapprpuOglOwsnxYspFZkut_-dy9yLTr9isnUhgC9mk8T25h3AM8ZjiyZsx0moSkmBn1bAlxqu9ZR74FxMBaQqJCyvH8i3kzEOe3Stiam1mXoPk9EqhJr40im56hWnXY8Wt80mwTAuqXP"
+                        />
+                        <div>
+                            <div className="text-white font-semibold text-sm">Natalia T. Morgan</div>
+                            <div className="text-emerald-200 text-xs">Science Teacher</div>
+                        </div>
+                    </div>
+                    <button className="bg-white text-[var(--color-schedule-primary)] px-5 py-2.5 rounded-full font-semibold hover:bg-gray-100 transition inline-flex items-center gap-2 text-sm cursor-pointer">
+                        Watch Recording
+                        <ArrowRight className="w-4 h-4" />
+                    </button>
+                </div>
+                <div className="order-1 lg:order-2 relative">
+                    <div className="relative rounded-t-[70px] rounded-b-lg overflow-hidden border border-emerald-800 shadow-2xl aspect-video group cursor-pointer">
+                        <img
+                            alt="Ceremony Hall"
+                            className="w-full h-full object-cover transition transform duration-700 group-hover:scale-105"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1AljKiXVAMOTFnwKWu_z8UQd9CeeudS3_R76y4caOKT-c9TquoynZMjg1PQTHottUXajz-kVnJBvqYgVp6o1iJGf8o0nCyDY9oGzW_LnyZ5VqWo32F_kMhleKSIu3tYQA13VKn8KNL5CUA-mqzXgyYCQZxWgsfw5ADnEy-5Vv-Dqi-brJqI6I3vOgOlBxBLkNzYplE130w87rEfUdqn3QqorhRieRyLjwn1SVp4chI8kBBA-O54ylHlZDwE--sGuKWVwj1UPwbnMk"
+                        />
+                        <div className="absolute inset-0 bg-black/30 flex items-center justify-center transition group-hover:bg-black/20">
+                            <div className="w-14 h-14 rounded-full border border-white/50 bg-white/10 backdrop-blur-sm flex items-center justify-center text-white transition transform group-hover:scale-110">
+                                <Play className="w-8 h-8 ml-1" fill="currentColor" />
                             </div>
                         </div>
+                    </div>
+                    <div className="absolute -bottom-8 right-0 flex gap-2">
+                        <button className="w-9 h-9 rounded-full border border-emerald-700 text-emerald-300 flex items-center justify-center hover:bg-emerald-800 transition cursor-pointer">
+                            <ChevronLeft className="w-4 h-4" />
+                        </button>
+                        <button className="w-9 h-9 rounded-full border border-emerald-700 text-emerald-300 flex items-center justify-center hover:bg-emerald-800 transition cursor-pointer">
+                            <ChevronRight className="w-4 h-4" />
+                        </button>
                     </div>
                 </div>
             </div>
